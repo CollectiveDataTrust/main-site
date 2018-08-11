@@ -76,7 +76,7 @@ var cont* = %* {
         },
         {
           "text": "Check how we have built a data-as-an-asset monetization unit here, on ",
-          "link": "https://www.collectivedatatrust.com/Class+(I)+Personal+Beneficial+Unit+Series.pdf",
+          "link": "https://www.collectivedatatrust.com/Class-I-Personal-Beneficial-Unit-Series.pdf",
           "link-label": "Constitution of Class: Personal Beneficial Unit"
         },
         {
@@ -168,7 +168,7 @@ var cont* = %* {
         },
         {
           "text": "Check how we have built a data-as-an-asset monetization unit here, on",
-          "link": "https://www.collectivedatatrust.com/Class+(I)+Personal+Beneficial+Unit+Series.pdf",
+          "link": "https://www.collectivedatatrust.com/Class-I-Personal-Beneficial-Unit-Series.pdf",
           "link-label": "Constitution of Class: Personal Beneficial Unit"
         },
         {
