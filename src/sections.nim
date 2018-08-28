@@ -1,4 +1,6 @@
-import vdom, karax, karaxdsl, kajax 
+
+include karax / prelude 
+import karax / prelude
 
 import sugar, strutils, json 
 

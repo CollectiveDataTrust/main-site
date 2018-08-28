@@ -1,1 +1,0 @@
---path: "/home/ivan/.nimble/pkgs/karax-0.2.0/karax"

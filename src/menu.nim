@@ -24,7 +24,7 @@ proc tmenu*(): VNode =
           li(class="nav-item"):
             a(class="nav-link js-scroll-trigger", href="#how"): text "How"
           li(class="nav-item"):
-            a(class="nav-link js-scroll-trigger", href="#documentation"): text "Documnetation"
+            a(class="nav-link js-scroll-trigger", href="#documentation"): text "Documentation"
           li(class="nav-item"):
             a(class="nav-link js-scroll-trigger", href="#collaborate"): text "Collaborate"
           li(class="nav-item"):
