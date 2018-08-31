@@ -51,10 +51,10 @@ proc tmenu*(): VNode =
             a(class="nav-link js-scroll-trigger", href="#collaborate"): text "Collaborate"
           li(class="nav-item"):
             a(class="nav-link js-scroll-trigger", href="#contact"): text "contact"
-          li(class="nav-item"):
-            a(class="nav-link js-scroll-trigger",
-              href="https://collectivedatatrust.auth.us-east-1.amazoncognito.com/login?response_type=code&client_id=25mmtrug0ec57e9vfj0rua2551&redirect_uri=https://www.collectivedatatrust.com"):
-                text "Sign Up"
+          # li(class="nav-item"):
+          #   a(class="nav-link js-scroll-trigger",
+          #     href="https://collectivedatatrust.auth.us-east-1.amazoncognito.com/login?response_type=code&client_id=25mmtrug0ec57e9vfj0rua2551&redirect_uri=https://www.collectivedatatrust.com"):
+          #       text "Sign Up"
           
 proc logoheader*():Vnode =
     result = buildHtml(tdiv()):
