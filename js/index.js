@@ -72,10 +72,10 @@ var NTI158485 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
 var NTI158480 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
 var NTI3863 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI3865 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3873 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI3853 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI3857 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3861 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI3869 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI3873 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI14348 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
 var NTI3821 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI3929 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
@@ -83,7 +83,7 @@ var NTI127 = {size: 0,kind: 40,base: null,node: null,finalizer: null};
 var NTI153 = {size: 0,kind: 29,base: null,node: null,finalizer: null};
 var NTI3923 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
 var NTI3839 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI3869 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI3861 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI174253 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
 var NTI117 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
 var NTI137256 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
@@ -128,8 +128,8 @@ var NNI174206 = {kind: 3, offset: "kind", len: 7, typ: NTI174202, name: "kind", 
 NTI174206.node = NNI174206;
 NTI174204.base = NTI174206;
 NTI174665.base = NTI174204;
-var NNI3869 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI3869.node = NNI3869;
+var NNI3861 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI3861.node = NNI3861;
 NTI3923.base = NTI3839;
 NTI3929.base = NTI3839;
 var NNI3839 = {kind: 2, len: 6, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "parent", len: 0, typ: NTI3923, name: "parent", sons: null}, 
@@ -142,22 +142,22 @@ NTI3839.node = NNI3839;
 var NNI3821 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI3821.node = NNI3821;
 NTI3839.base = NTI3821;
-NTI3869.base = NTI3839;
+NTI3861.base = NTI3839;
 var NNI14348 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI153, name: "Field0", sons: null}, 
 {kind: 1, offset: "Field1", len: 0, typ: NTI117, name: "Field1", sons: null}]};
 NTI14348.node = NNI14348;
-var NNI3861 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI3861.node = NNI3861;
-NTI3861.base = NTI3839;
+var NNI3873 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI3873.node = NNI3873;
+NTI3873.base = NTI3839;
+var NNI3869 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI3869.node = NNI3869;
+NTI3869.base = NTI3839;
 var NNI3857 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI3857.node = NNI3857;
 var NNI3853 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI3853.node = NNI3853;
 NTI3853.base = NTI3839;
 NTI3857.base = NTI3853;
-var NNI3873 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI3873.node = NNI3873;
-NTI3873.base = NTI3839;
 var NNI3865 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI3865.node = NNI3865;
 var NNI3863 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
@@ -743,35 +743,6 @@ function raiseException(e_14818, ename_14819) {
 	
 }
 
-function chckIndx(i_16935, a_16936, b_16937) {
-			var Tmp1;
-
-	var result_16938 = 0;
-
-	BeforeRet: do {
-			if (!(a_16936 <= i_16935)) Tmp1 = false; else {				Tmp1 = (i_16935 <= b_16937);			}		if (Tmp1) {
-		result_16938 = i_16935;
-		break BeforeRet;
-		}
-		else {
-		raiseIndexError();
-		}
-		
-	} while (false);
-
-	return result_16938;
-
-}
-
-function addInt(a_15603, b_15604) {
-		    var result = a_15603 + b_15604;
-    if (result > 2147483647 || result < -2147483648) raiseOverflow();
-    return result;
-  
-
-	
-}
-
 function chckRange(i_16954, a_16955, b_16956) {
 			var Tmp1;
 
@@ -792,8 +763,37 @@ function chckRange(i_16954, a_16955, b_16956) {
 
 }
 
+function chckIndx(i_16935, a_16936, b_16937) {
+			var Tmp1;
+
+	var result_16938 = 0;
+
+	BeforeRet: do {
+			if (!(a_16936 <= i_16935)) Tmp1 = false; else {				Tmp1 = (i_16935 <= b_16937);			}		if (Tmp1) {
+		result_16938 = i_16935;
+		break BeforeRet;
+		}
+		else {
+		raiseIndexError();
+		}
+		
+	} while (false);
+
+	return result_16938;
+
+}
+
 function subInt(a_15621, b_15622) {
 		    var result = a_15621 - b_15622;
+    if (result > 2147483647 || result < -2147483648) raiseOverflow();
+    return result;
+  
+
+	
+}
+
+function addInt(a_15603, b_15604) {
+		    var result = a_15603 + b_15604;
     if (result > 2147483647 || result < -2147483648) raiseOverflow();
     return result;
   
@@ -928,6 +928,20 @@ function new_jarray_174639() {
 
 }
 
+function is_power_of_two_48864(x_48866) {
+		var Tmp1;
+
+	var result_48867 = false;
+
+	BeforeRet: do {
+		if (!(0 < x_48866)) Tmp1 = false; else {			Tmp1 = ((x_48866 & (x_48866 - 1)) == 0);		}		result_48867 = Tmp1;
+		break BeforeRet;
+	} while (false);
+
+	return result_48867;
+
+}
+
 function add_12851(x_12854, x_12854_Idx, y_12855) {
 		      var len = x_12854[0].length-1;
       for (var i = 0; i < y_12855.length; ++i) {
@@ -1042,16 +1056,6 @@ function unhandledException(e_14719) {
 	
 }
 
-function raiseIndexError() {
-		var e_15155 = null;
-		e_15155 = {m_type: NTI3869, parent: null, name: null, message: null, trace: null, raise_id: 0, up: null};
-		e_15155.message = nimCopy(null, makeNimstrLit("index out of bounds"), NTI151);
-		e_15155.parent = null;
-		raiseException(e_15155, "IndexError");
-
-	
-}
-
 function sys_fatal_19837(message_19843) {
 	var F={procname:"sysFatal.sysFatal",prev:framePtr,filename:"lib/system.nim",line:0};
 	framePtr = F;
@@ -1086,76 +1090,6 @@ function failed_assert_impl_19881(msg_19883) {
 	framePtr = F.prev;
 
 	
-}
-
-function add_175006(father_175008, child_175009) {
-	var F={procname:"json.add",prev:framePtr,filename:"lib/pure/json.nim",line:0};
-	framePtr = F;
-		if (!((father_175008.kind == 6))) {
-		F.line = 248;
-		failed_assert_impl_19881(makeNimstrLit("father.kind == JArray "));
-		}
-		
-		F.line = 249;
-		if (father_175008.elems != null) { father_175008.elems.push(child_175009); } else { father_175008.elems = [child_175009]; };
-	framePtr = F.prev;
-
-	
-}
-
-function raiseOverflow() {
-		var e_15065 = null;
-		e_15065 = {m_type: NTI3857, parent: null, name: null, message: null, trace: null, raise_id: 0, up: null};
-		e_15065.message = nimCopy(null, makeNimstrLit("over- or underflow"), NTI151);
-		e_15065.parent = null;
-		raiseException(e_15065, "OverflowError");
-
-	
-}
-
-function HEX25_200081(elements_200086) {
-	var result_200087 = null;
-
-	var F={procname:"%.%",prev:framePtr,filename:"lib/pure/json.nim",line:0};
-	framePtr = F;
-		F.line = 291;
-		result_200087 = new_jarray_174639();
-		L1: do {
-			F.line = 292;
-			var elem_200095 = null;
-			F.line = 2220;
-			var i_200100 = 0;
-			L2: do {
-				F.line = 2221;
-					L3: while (true) {
-					if (!(i_200100 < (elements_200086 != null ? elements_200086.length : 0))) break L3;
-						F.line = 2222;
-						elem_200095 = elements_200086[chckIndx(i_200100, 0, elements_200086.length+0-1)-0];
-						F.line = 292;
-						add_175006(result_200087, elem_200095);
-						F.line = 2223;
-						i_200100 = addInt(i_200100, 1);
-					}
-			} while(false);
-		} while(false);
-	framePtr = F.prev;
-
-	return result_200087;
-
-}
-
-function is_power_of_two_48864(x_48866) {
-		var Tmp1;
-
-	var result_48867 = false;
-
-	BeforeRet: do {
-		if (!(0 < x_48866)) Tmp1 = false; else {			Tmp1 = ((x_48866 & (x_48866 - 1)) == 0);		}		result_48867 = Tmp1;
-		break BeforeRet;
-	} while (false);
-
-	return result_48867;
-
 }
 
 function raiseRangeError() {
@@ -1206,6 +1140,26 @@ function new_jobject_174410() {
 
 	return result_174412;
 
+}
+
+function raiseIndexError() {
+		var e_15155 = null;
+		e_15155 = {m_type: NTI3869, parent: null, name: null, message: null, trace: null, raise_id: 0, up: null};
+		e_15155.message = nimCopy(null, makeNimstrLit("index out of bounds"), NTI151);
+		e_15155.parent = null;
+		raiseException(e_15155, "IndexError");
+
+	
+}
+
+function raiseOverflow() {
+		var e_15065 = null;
+		e_15065 = {m_type: NTI3857, parent: null, name: null, message: null, trace: null, raise_id: 0, up: null};
+		e_15065.message = nimCopy(null, makeNimstrLit("over- or underflow"), NTI151);
+		e_15065.parent = null;
+		raiseException(e_15065, "OverflowError");
+
+	
 }
 
 function HEX21HEX26_137257(h_137259, val_137260) {
@@ -1565,8 +1519,53 @@ function HEX25_180266(s_180268) {
 	return result_180269;
 
 }
-var menu_list_200114 = [HEX25_200081([HEX25_180370([{Field0: makeNimstrLit("href"), Field1: HEX25_180266(makeNimstrLit("#why"))}, {Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Why"))}]), HEX25_180370([{Field0: makeNimstrLit("href"), Field1: HEX25_180266(makeNimstrLit("#what"))}, {Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("What"))}]), HEX25_180370([{Field0: makeNimstrLit("href"), Field1: HEX25_180266(makeNimstrLit("#how"))}, {Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("How"))}]), HEX25_180370([{Field0: makeNimstrLit("href"), Field1: HEX25_180266(makeNimstrLit("#documentation"))}, {Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Documentation"))}]), HEX25_180370([{Field0: makeNimstrLit("href"), Field1: HEX25_180266(makeNimstrLit("#collaborate"))}, {Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Collaborate"))}]), HEX25_180370([{Field0: makeNimstrLit("href"), Field1: HEX25_180266(makeNimstrLit("#contact"))}, {Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("contact"))}]), HEX25_180370([{Field0: makeNimstrLit("href"), Field1: HEX25_180266(makeNimstrLit("https://collectivedatatrust.auth.us-east-1.amazoncognito.com/login?response_type=code&client_id=25mmtrug0ec57e9vfj0rua2551&redirect_uri=https://www.collectivedatatrust.com"))}, {Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Sign Up"))}])])];
-var cont_200551 = [HEX25_180370([{Field0: makeNimstrLit("default-lang"), Field1: HEX25_180266(makeNimstrLit("en"))}, {Field0: makeNimstrLit("en"), Field1: HEX25_180370([{Field0: makeNimstrLit("lang-title"), Field1: HEX25_180266(makeNimstrLit("Language"))}, {Field0: makeNimstrLit("langs"), Field1: HEX25_200081([HEX25_180370([{Field0: makeNimstrLit("en"), Field1: HEX25_180266(makeNimstrLit("English"))}]), HEX25_180370([{Field0: makeNimstrLit("es"), Field1: HEX25_180266(makeNimstrLit("Spanish"))}])])}, {Field0: makeNimstrLit("page_title"), Field1: HEX25_180266(makeNimstrLit("Collective Data Trust"))}, {Field0: makeNimstrLit("sections"), Field1: HEX25_200081([HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("Why"))}, {Field0: makeNimstrLit("type"), Field1: HEX25_180266(makeNimstrLit("text"))}, {Field0: makeNimstrLit("images"), Field1: HEX25_200081([HEX25_180266(makeNimstrLit("img/guy-data.svg"))])}, {Field0: makeNimstrLit("contents"), Field1: HEX25_200081([HEX25_180266(makeNimstrLit("Imagine that someone could pay you just for existing, and sharing some information about your existence.")), HEX25_180266(makeNimstrLit("Your data is your asset, because it has value and is used in transactions that moves the information economy.")), HEX25_180266(makeNimstrLit("Internet and Machines exist because of us, and we should have a say on the evolution of both.")), HEX25_180266(makeNimstrLit("This is not about the money made out of your data with no benefit for you. This is about the decisions that affects you as the user.")), HEX25_180266(makeNimstrLit("We don\xE2\x80\x99t want to give up to our lifestyle and needs, just to protect our data. What we want is full control and ownership.")), HEX25_180266(makeNimstrLit("This is not an issue of policies and regulations, this is an issue of CONTROL and OWNERSHIP."))])}]), HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("What"))}, {Field0: makeNimstrLit("type"), Field1: HEX25_180266(makeNimstrLit("text"))}, {Field0: makeNimstrLit("images"), Field1: HEX25_200081([HEX25_180266(makeNimstrLit("img/data-found.svg")), HEX25_180266(makeNimstrLit("img/complete-monetization.svg"))])}, {Field0: makeNimstrLit("contents"), Field1: HEX25_200081([HEX25_180266(makeNimstrLit("This is The Collective Data Trust.")), HEX25_180266(makeNimstrLit("We are a community of internet users where we understand the importance of Artificial Intelligence development, and the urgency of better Data Management and Monetization practices, so we have created the Collective Data Trust (CDT).")), HEX25_180266(makeNimstrLit("Collective Data Trust allows you to become owner of the company that monetizes your data.")), HEX25_180266(makeNimstrLit("The Trust allows its Beneficiaries to take advantage from any monetization process that occurs involving his data while having full control about which data is to be used, how it will be used, and by whom.")), HEX25_180266(makeNimstrLit("The Beneficiary\'s account is integrated by a Data-as-an-asset portfolio, through a collaborative model for Artificial Intelligence development and Collective Data Monetization.")), HEX25_180266(makeNimstrLit("Collective Data Trust is a fiduciary entity, legally established under the State of Delaware, with registration No. 6855308, and by which, once you sign in, you become a beneficial owner proportionally to your own asset integration. By becoming a Beneficiary of the Trust, the USER is turned into an OWNER"))])}]), HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("How"))}, {Field0: makeNimstrLit("type"), Field1: HEX25_180266(makeNimstrLit("text"))}, {Field0: makeNimstrLit("images"), Field1: HEX25_200081([HEX25_180266(makeNimstrLit("img/data-money.svg")), HEX25_180266(makeNimstrLit("img/info-economy.svg"))])}, {Field0: makeNimstrLit("contents"), Field1: HEX25_200081([HEX25_180266(makeNimstrLit("CDT looks to contribute with a universal basic income, but instead of hopping for some social justice or claiming over economics rights, we take the system as it is, and we look for ways to make it happen.")), HEX25_180266(makeNimstrLit("CDT focuses on the possibility that Data has to produce income to its beneficiaries.")), HEX25_180266(makeNimstrLit("By signing in, all internet users can now become owners of the company that monetizes their data.")), HEX25_180266(makeNimstrLit("By Monetization we refer to processes aligned to our mission, that will create and increase the value of the collective data, through products development, or through direct monetization and applied services like marketing and research. Once you have signed in, you are no longer just an user, you are the owner.")), HEX25_180266(makeNimstrLit("Once the owners accumulates a critical mass of data into the collective digital assets, the Trust, can optimize monetization process and start giving tangible results to the owners.")), HEX25_180266(makeNimstrLit("At the same time, this mass of data will be used to train and enhance artificial intelligence powered services and products, that will be at the service of the beneficiaries and under the individual control of each of them.")), HEX25_180266(makeNimstrLit("The Collective Data Monetization System is where we secure a private and safe environment for a user-based, data-centric distributed economy, beneficial to all its participants.")), HEX25_180266(makeNimstrLit("Each beneficiary can participate in different ways:")), HEX25_180266(makeNimstrLit("Passive monetization:")), HEX25_180266(makeNimstrLit("You choose what you will like to share, and we will create value out of it.")), HEX25_180266(makeNimstrLit("Active Monetization:")), HEX25_180266(makeNimstrLit("Teach the machine, answer paid questions, participate in rewarded research campaigns, and sell specifically demanded data, under your own terms."))])}])])}, {Field0: makeNimstrLit("documentation"), Field1: HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("Documentation"))}, {Field0: makeNimstrLit("items"), Field1: HEX25_200081([HEX25_180370([{Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Check the concept of Public Collectively Owned Property here, on "))}, {Field0: makeNimstrLit("link"), Field1: HEX25_180266(makeNimstrLit("https://www.collectivedatatrust.com/CDT-PubliCOw-SP.pdf"))}, {Field0: makeNimstrLit("link-label"), Field1: HEX25_180266(makeNimstrLit("Short Paper"))}]), HEX25_180370([{Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Check the legal foundations of the Community here, on "))}, {Field0: makeNimstrLit("link"), Field1: HEX25_180266(makeNimstrLit("https://www.collectivedatatrust.com/CDT-DeclarationOfTrust.pdf"))}, {Field0: makeNimstrLit("link-label"), Field1: HEX25_180266(makeNimstrLit("Declaration of Trust"))}]), HEX25_180370([{Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Check how we have built a data-as-an-asset monetization unit here, on "))}, {Field0: makeNimstrLit("link"), Field1: HEX25_180266(makeNimstrLit("https://www.collectivedatatrust.com/Class-I-Personal-Beneficial-Unit-Series.pdf"))}, {Field0: makeNimstrLit("link-label"), Field1: HEX25_180266(makeNimstrLit("Constitution of Class: Personal Beneficial Unit"))}]), HEX25_180370([{Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Edit discuss and fork in "))}, {Field0: makeNimstrLit("link"), Field1: HEX25_180266(makeNimstrLit("https://github.com/CollectiveDataTrust/contracts"))}, {Field0: makeNimstrLit("link-label"), Field1: HEX25_180266(makeNimstrLit(" GitHub"))}])])}, {Field0: makeNimstrLit("collaborate"), Field1: HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("Colaborate"))}, {Field0: makeNimstrLit("items"), Field1: HEX25_200081([HEX25_180370([{Field0: makeNimstrLit("volunteer"), Field1: HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("Volunteer"))}, {Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("We are fully loaded with work, and we welcome all proactive members of the community who would like to participate and get involved in the development of CDT."))}, {Field0: makeNimstrLit("links"), Field1: HEX25_200081([new_jobject_174410()])}])}])])}])}])}, {Field0: makeNimstrLit("es"), Field1: HEX25_180370([{Field0: makeNimstrLit("lang-title"), Field1: HEX25_180266(makeNimstrLit("Idioma"))}, {Field0: makeNimstrLit("langs"), Field1: HEX25_200081([HEX25_180370([{Field0: makeNimstrLit("en"), Field1: HEX25_180266(makeNimstrLit("Ingles"))}]), HEX25_180370([{Field0: makeNimstrLit("es"), Field1: HEX25_180266(makeNimstrLit("Espa\xC3\xB1ol"))}])])}, {Field0: makeNimstrLit("page_title"), Field1: HEX25_180266(makeNimstrLit("Collective Data Trust"))}, {Field0: makeNimstrLit("label"), Field1: HEX25_180266(makeNimstrLit("Espa\xC3\xB1ol"))}, {Field0: makeNimstrLit("sections"), Field1: HEX25_200081([HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("Por qu\xC3\xA9"))}, {Field0: makeNimstrLit("type"), Field1: HEX25_180266(makeNimstrLit("text"))}, {Field0: makeNimstrLit("image"), Field1: HEX25_180266(makeNimstrLit("img/1.jpg"))}, {Field0: makeNimstrLit("contents"), Field1: HEX25_200081([HEX25_180266(makeNimstrLit("Imag\xC3\xADnate que alguien pudiera pagarte tan solo por existir y compartir informaci\xC3\xB3n respecto a tu existencia.")), HEX25_180266(makeNimstrLit("Tus datos son tus activos, porque tienen un valor, que se usa en transacciones, que mueven la econom\xC3\xADa de la informaci\xC3\xB3n.")), HEX25_180266(makeNimstrLit("Nosotros somos la raz\xC3\xB3n de existir para el internet y las m\xC3\xA1quinas, deber\xC3\xADamos poder opinar sobre la evoluci\xC3\xB3n de ambos.")), HEX25_180266(makeNimstrLit("No se trata del dinero que tus datos producen sin darte ning\xC3\xBAn beneficio. Se trata de las decisiones que te afectan como usuario.")), HEX25_180266(makeNimstrLit("Nosotros no queremos renunciar a nuestro estilo de vida y nuestras necesidad, solo para proteger nuestros datos. Lo que queremos es control total sobre nuestra propiedad.")), HEX25_180266(makeNimstrLit("Este no es un asunto de pol\xC3\xADticas y regulaciones, este es un asunto de CONTROL y PROPIEDAD"))])}]), HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("Qu\xC3\xA9"))}, {Field0: makeNimstrLit("type"), Field1: HEX25_180266(makeNimstrLit("text"))}, {Field0: makeNimstrLit("image"), Field1: HEX25_180266(makeNimstrLit("img/2.jpg"))}, {Field0: makeNimstrLit("contents"), Field1: HEX25_200081([HEX25_180266(makeNimstrLit("Esto es Collective Data Trust, un fideicomiso colectivo de datos.")), HEX25_180266(makeNimstrLit("Somos una comunidad de usuarios de internet, donde entendemos la importancia del desarrollo seguro de la inteligencia y artificial, y la urgencia de mejores pr\xC3\xA1cticas en cuanto a manejo de datos y monetizaci\xC3\xB3n, y por eso hemos creado el Fideicomiso Colectivo de Datos (CDT).")), HEX25_180266(makeNimstrLit("Collective Data Trust te permite convertirte en propietario de la empresa que monetiza tus datos.")), HEX25_180266(makeNimstrLit("El Fideicomiso le permite a sus beneficiario poder aprovechar cualquier proceso de monetizaci\xC3\xB3n que ocurra en relaci\xC3\xB3n a sus datos, mientras conserva el absoluto control sobre qu\xC3\xA9 datos ser\xC3\xA1n utilizados, como ser\xC3\xA1n monetizados y qui\xC3\xA9n tendr\xC3\xA1 acceso a ellos."))])}]), HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("C\xC3\xB3mo"))}, {Field0: makeNimstrLit("type"), Field1: HEX25_180266(makeNimstrLit("text"))}, {Field0: makeNimstrLit("image"), Field1: HEX25_180266(makeNimstrLit("img/3.jpg"))}, {Field0: makeNimstrLit("contents"), Field1: HEX25_200081([HEX25_180266(makeNimstrLit("CDT busca contribuir con un ingreso b\xC3\xA1sico universal, pero de apuntar a alguna justicia social, o de reclamar derechos socio-econ\xC3\xB3micos, nosotros tomamos las cosas tal y como son, y nos enfocamos en la capacidad que tienen los datos, de generar ingresos para sus propietarios.")), HEX25_180266(makeNimstrLit("Con registrarse, ahora todos los usuarios de internet podemos convertirnos en propietarios de las empresas que monetizan nuestros datos.")), HEX25_180266(makeNimstrLit("Por \xE2\x80\x9CMonetizaci\xC3\xB3n\xE2\x80\x9D nos referimos a procesos que est\xC3\xA1n alineados a nuestra misi\xC3\xB3n, que  crear\xC3\xA1n y aumentaran el valor del colectivo de datos, a trav\xC3\xA9s del desarrollo de productos o de la monetizaci\xC3\xB3n directa en servicios aplicados a \xC3\xA1reas como el marketing. ")), HEX25_180266(makeNimstrLit("Una vez que los Beneficiarios acumulan un masa cr\xC3\xADtica de datos dentro de sus activos digitales, el fideicomiso puede optimizar los procesos de monetizaci\xC3\xB3n, de manera a generar resultados tangibles para sus beneficiarios.")), HEX25_180266(makeNimstrLit("Al mismo tiempo, esta masa de datos ser\xC3\xA1 utilizada para entrenar y mejorar servicios y productos basados en inteligencia artificial, que estar\xC3\xA1n al servicio de los beneficiarios, bajo control individual de cada uno."))])}])])}, {Field0: makeNimstrLit("documentation"), Field1: HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("Documentaci\xC3\xB3n"))}, {Field0: makeNimstrLit("items"), Field1: HEX25_200081([HEX25_180370([{Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Check the concept of Public Collectively Owned Property here, on "))}, {Field0: makeNimstrLit("link"), Field1: HEX25_180266(makeNimstrLit("https://www.collectivedatatrust.com/CDT-PubliCOw-SP.pdf"))}, {Field0: makeNimstrLit("link-label"), Field1: HEX25_180266(makeNimstrLit("Short Paper"))}]), HEX25_180370([{Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Check the legal foundations of the Community here, on "))}, {Field0: makeNimstrLit("link"), Field1: HEX25_180266(makeNimstrLit("https://www.collectivedatatrust.com/CDT-DeclarationOfTrust.pdf"))}, {Field0: makeNimstrLit("link-label"), Field1: HEX25_180266(makeNimstrLit("Declaration of Trust"))}]), HEX25_180370([{Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Check how we have built a data-as-an-asset monetization unit here, on"))}, {Field0: makeNimstrLit("link"), Field1: HEX25_180266(makeNimstrLit("https://www.collectivedatatrust.com/Class-I-Personal-Beneficial-Unit-Series.pdf"))}, {Field0: makeNimstrLit("link-label"), Field1: HEX25_180266(makeNimstrLit("Constitution of Class: Personal Beneficial Unit"))}]), HEX25_180370([{Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Edit discuss and fork in "))}, {Field0: makeNimstrLit("link"), Field1: HEX25_180266(makeNimstrLit("https://github.com/CollectiveDataTrust/contracts"))}, {Field0: makeNimstrLit("link-label"), Field1: HEX25_180266(makeNimstrLit(" GitHub"))}])])}])}])}])}])];
+
+function add_175006(father_175008, child_175009) {
+	var F={procname:"json.add",prev:framePtr,filename:"lib/pure/json.nim",line:0};
+	framePtr = F;
+		if (!((father_175008.kind == 6))) {
+		F.line = 248;
+		failed_assert_impl_19881(makeNimstrLit("father.kind == JArray "));
+		}
+		
+		F.line = 249;
+		if (father_175008.elems != null) { father_175008.elems.push(child_175009); } else { father_175008.elems = [child_175009]; };
+	framePtr = F.prev;
+
+	
+}
+
+function HEX25_200050(elements_200055) {
+	var result_200056 = null;
+
+	var F={procname:"%.%",prev:framePtr,filename:"lib/pure/json.nim",line:0};
+	framePtr = F;
+		F.line = 291;
+		result_200056 = new_jarray_174639();
+		L1: do {
+			F.line = 292;
+			var elem_200064 = null;
+			F.line = 2220;
+			var i_200069 = 0;
+			L2: do {
+				F.line = 2221;
+					L3: while (true) {
+					if (!(i_200069 < (elements_200055 != null ? elements_200055.length : 0))) break L3;
+						F.line = 2222;
+						elem_200064 = elements_200055[chckIndx(i_200069, 0, elements_200055.length+0-1)-0];
+						F.line = 292;
+						add_175006(result_200056, elem_200064);
+						F.line = 2223;
+						i_200069 = addInt(i_200069, 1);
+					}
+			} while(false);
+		} while(false);
+	framePtr = F.prev;
+
+	return result_200056;
+
+}
+var cont_200540 = [HEX25_180370([{Field0: makeNimstrLit("default-lang"), Field1: HEX25_180266(makeNimstrLit("en"))}, {Field0: makeNimstrLit("en"), Field1: HEX25_180370([{Field0: makeNimstrLit("lang-title"), Field1: HEX25_180266(makeNimstrLit("Language"))}, {Field0: makeNimstrLit("langs"), Field1: HEX25_200050([HEX25_180370([{Field0: makeNimstrLit("en"), Field1: HEX25_180266(makeNimstrLit("English"))}]), HEX25_180370([{Field0: makeNimstrLit("es"), Field1: HEX25_180266(makeNimstrLit("Spanish"))}])])}, {Field0: makeNimstrLit("page_title"), Field1: HEX25_180266(makeNimstrLit("Collective Data Trust"))}, {Field0: makeNimstrLit("logo"), Field1: HEX25_180266(makeNimstrLit("img/logo_header.png"))}, {Field0: makeNimstrLit("menu"), Field1: HEX25_200050([HEX25_180370([{Field0: makeNimstrLit("href"), Field1: HEX25_180266(makeNimstrLit("#Why"))}, {Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Why"))}]), HEX25_180370([{Field0: makeNimstrLit("href"), Field1: HEX25_180266(makeNimstrLit("#What"))}, {Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("What"))}]), HEX25_180370([{Field0: makeNimstrLit("href"), Field1: HEX25_180266(makeNimstrLit("#How"))}, {Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("How"))}]), HEX25_180370([{Field0: makeNimstrLit("href"), Field1: HEX25_180266(makeNimstrLit("#documentation"))}, {Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Documentation"))}]), HEX25_180370([{Field0: makeNimstrLit("href"), Field1: HEX25_180266(makeNimstrLit("#collaborate"))}, {Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Collaborate"))}]), HEX25_180370([{Field0: makeNimstrLit("href"), Field1: HEX25_180266(makeNimstrLit("#contact"))}, {Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("contact"))}]), HEX25_180370([{Field0: makeNimstrLit("href"), Field1: HEX25_180266(makeNimstrLit("http://local.imu.ai:13000/#/signup"))}, {Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Sign Up"))}])])}, {Field0: makeNimstrLit("sections"), Field1: HEX25_200050([HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("Why"))}, {Field0: makeNimstrLit("type"), Field1: HEX25_180266(makeNimstrLit("text"))}, {Field0: makeNimstrLit("images"), Field1: HEX25_200050([HEX25_180266(makeNimstrLit("img/guy-data.svg"))])}, {Field0: makeNimstrLit("contents"), Field1: HEX25_200050([HEX25_180266(makeNimstrLit("Imagine that someone could pay you just for existing, and sharing some information about your existence.")), HEX25_180266(makeNimstrLit("Your data is your asset, because it has value and is used in transactions that moves the information economy.")), HEX25_180266(makeNimstrLit("Internet and Machines exist because of us, and we should have a say on the evolution of both.")), HEX25_180266(makeNimstrLit("This is not about the money made out of your data with no benefit for you. This is about the decisions that affects you as the user.")), HEX25_180266(makeNimstrLit("We don\xE2\x80\x99t want to give up to our lifestyle and needs, just to protect our data. What we want is full control and ownership.")), HEX25_180266(makeNimstrLit("This is not an issue of policies and regulations, this is an issue of CONTROL and OWNERSHIP."))])}]), HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("What"))}, {Field0: makeNimstrLit("type"), Field1: HEX25_180266(makeNimstrLit("text"))}, {Field0: makeNimstrLit("images"), Field1: HEX25_200050([HEX25_180266(makeNimstrLit("img/data-found.svg")), HEX25_180266(makeNimstrLit("img/complete-monetization.svg"))])}, {Field0: makeNimstrLit("contents"), Field1: HEX25_200050([HEX25_180266(makeNimstrLit("This is The Collective Data Trust.")), HEX25_180266(makeNimstrLit("We are a community of internet users where we understand the importance of Artificial Intelligence development, and the urgency of better Data Management and Monetization practices, so we have created the Collective Data Trust (CDT).")), HEX25_180266(makeNimstrLit("Collective Data Trust allows you to become owner of the company that monetizes your data.")), HEX25_180266(makeNimstrLit("The Trust allows its Beneficiaries to take advantage from any monetization process that occurs involving his data while having full control about which data is to be used, how it will be used, and by whom.")), HEX25_180266(makeNimstrLit("The Beneficiary\'s account is integrated by a Data-as-an-asset portfolio, through a collaborative model for Artificial Intelligence development and Collective Data Monetization.")), HEX25_180266(makeNimstrLit("Collective Data Trust is a fiduciary entity, legally established under the State of Delaware, with registration No. 6855308, and by which, once you sign in, you become a beneficial owner proportionally to your own asset integration. By becoming a Beneficiary of the Trust, the USER is turned into an OWNER"))])}]), HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("How"))}, {Field0: makeNimstrLit("type"), Field1: HEX25_180266(makeNimstrLit("text"))}, {Field0: makeNimstrLit("images"), Field1: HEX25_200050([HEX25_180266(makeNimstrLit("img/data-money.svg")), HEX25_180266(makeNimstrLit("img/info-economy.svg"))])}, {Field0: makeNimstrLit("contents"), Field1: HEX25_200050([HEX25_180266(makeNimstrLit("CDT looks to contribute with a universal basic income, but instead of hoping for some social justice or claiming over economics rights, we take the system as it is, and we look for ways to make it happen.")), HEX25_180266(makeNimstrLit("CDT focuses on the possibility that Data has to produce income to its beneficiaries.")), HEX25_180266(makeNimstrLit("By signing in, all internet users can now become owners of the company that monetizes their data.")), HEX25_180266(makeNimstrLit("By Monetization we refer to processes aligned to our mission, that will create and increase the value of the collective data, through products development, or through direct monetization and applied services like marketing and research. Once you have signed in, you are no longer just an user, you are the owner.")), HEX25_180266(makeNimstrLit("Once the owners accumulates a critical mass of data into the collective digital assets, the Trust, can optimize monetization process and start giving tangible results to the owners.")), HEX25_180266(makeNimstrLit("At the same time, this mass of data will be used to train and enhance artificial intelligence powered services and products, that will be at the service of the beneficiaries and under the individual control of each of them.")), HEX25_180266(makeNimstrLit("The Collective Data Monetization System is where we secure a private and safe environment for a user-based, data-centric distributed economy, beneficial to all its participants.")), HEX25_180266(makeNimstrLit("Each beneficiary can participate in different ways:")), HEX25_180266(makeNimstrLit("Passive monetization:")), HEX25_180266(makeNimstrLit("You choose what you will like to share, and we will create value out of it.")), HEX25_180266(makeNimstrLit("Active Monetization:")), HEX25_180266(makeNimstrLit("Teach the machine, answer paid questions, participate in rewarded research campaigns, and sell specifically demanded data, under your own terms."))])}])])}, {Field0: makeNimstrLit("documentation"), Field1: HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("Documentation"))}, {Field0: makeNimstrLit("items"), Field1: HEX25_200050([HEX25_180370([{Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Check the concept of Public Collectively Owned Property here, on "))}, {Field0: makeNimstrLit("link"), Field1: HEX25_180266(makeNimstrLit("https://www.collectivedatatrust.com/CDT-PubliCOw-SP.pdf"))}, {Field0: makeNimstrLit("link-label"), Field1: HEX25_180266(makeNimstrLit("Short Paper"))}]), HEX25_180370([{Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Check the legal foundations of the Community here, on "))}, {Field0: makeNimstrLit("link"), Field1: HEX25_180266(makeNimstrLit("https://www.collectivedatatrust.com/CDT-DeclarationOfTrust.pdf"))}, {Field0: makeNimstrLit("link-label"), Field1: HEX25_180266(makeNimstrLit("Declaration of Trust"))}]), HEX25_180370([{Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Check how we have built a data-as-an-asset monetization unit here, on "))}, {Field0: makeNimstrLit("link"), Field1: HEX25_180266(makeNimstrLit("https://www.collectivedatatrust.com/Class-I-Personal-Beneficial-Unit-Series.pdf"))}, {Field0: makeNimstrLit("link-label"), Field1: HEX25_180266(makeNimstrLit("Constitution of Class: Personal Beneficial Unit"))}]), HEX25_180370([{Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Edit discuss and fork in "))}, {Field0: makeNimstrLit("link"), Field1: HEX25_180266(makeNimstrLit("https://github.com/CollectiveDataTrust/contracts"))}, {Field0: makeNimstrLit("link-label"), Field1: HEX25_180266(makeNimstrLit(" GitHub"))}])])}, {Field0: makeNimstrLit("collaborate"), Field1: HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("Colaborate"))}, {Field0: makeNimstrLit("items"), Field1: HEX25_200050([HEX25_180370([{Field0: makeNimstrLit("volunteer"), Field1: HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("Volunteer"))}, {Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("We are fully loaded with work, and we welcome all proactive members of the community who would like to participate and get involved in the development of CDT."))}, {Field0: makeNimstrLit("links"), Field1: HEX25_200050([new_jobject_174410()])}])}])])}])}])}, {Field0: makeNimstrLit("es"), Field1: HEX25_180370([{Field0: makeNimstrLit("lang-title"), Field1: HEX25_180266(makeNimstrLit("Idioma"))}, {Field0: makeNimstrLit("langs"), Field1: HEX25_200050([HEX25_180370([{Field0: makeNimstrLit("en"), Field1: HEX25_180266(makeNimstrLit("Ingles"))}]), HEX25_180370([{Field0: makeNimstrLit("es"), Field1: HEX25_180266(makeNimstrLit("Espa\xC3\xB1ol"))}])])}, {Field0: makeNimstrLit("page_title"), Field1: HEX25_180266(makeNimstrLit("Collective Data Trust"))}, {Field0: makeNimstrLit("label"), Field1: HEX25_180266(makeNimstrLit("Espa\xC3\xB1ol"))}, {Field0: makeNimstrLit("sections"), Field1: HEX25_200050([HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("Por qu\xC3\xA9"))}, {Field0: makeNimstrLit("type"), Field1: HEX25_180266(makeNimstrLit("text"))}, {Field0: makeNimstrLit("image"), Field1: HEX25_180266(makeNimstrLit("img/1.jpg"))}, {Field0: makeNimstrLit("contents"), Field1: HEX25_200050([HEX25_180266(makeNimstrLit("Imag\xC3\xADnate que alguien pudiera pagarte tan solo por existir y compartir informaci\xC3\xB3n respecto a tu existencia.")), HEX25_180266(makeNimstrLit("Tus datos son tus activos, porque tienen un valor, que se usa en transacciones, que mueven la econom\xC3\xADa de la informaci\xC3\xB3n.")), HEX25_180266(makeNimstrLit("Nosotros somos la raz\xC3\xB3n de existir para el internet y las m\xC3\xA1quinas, deber\xC3\xADamos poder opinar sobre la evoluci\xC3\xB3n de ambos.")), HEX25_180266(makeNimstrLit("No se trata del dinero que tus datos producen sin darte ning\xC3\xBAn beneficio. Se trata de las decisiones que te afectan como usuario.")), HEX25_180266(makeNimstrLit("Nosotros no queremos renunciar a nuestro estilo de vida y nuestras necesidad, solo para proteger nuestros datos. Lo que queremos es control total sobre nuestra propiedad.")), HEX25_180266(makeNimstrLit("Este no es un asunto de pol\xC3\xADticas y regulaciones, este es un asunto de CONTROL y PROPIEDAD"))])}]), HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("Qu\xC3\xA9"))}, {Field0: makeNimstrLit("type"), Field1: HEX25_180266(makeNimstrLit("text"))}, {Field0: makeNimstrLit("image"), Field1: HEX25_180266(makeNimstrLit("img/2.jpg"))}, {Field0: makeNimstrLit("contents"), Field1: HEX25_200050([HEX25_180266(makeNimstrLit("Esto es Collective Data Trust, un fideicomiso colectivo de datos.")), HEX25_180266(makeNimstrLit("Somos una comunidad de usuarios de internet, donde entendemos la importancia del desarrollo seguro de la inteligencia y artificial, y la urgencia de mejores pr\xC3\xA1cticas en cuanto a manejo de datos y monetizaci\xC3\xB3n, y por eso hemos creado el Fideicomiso Colectivo de Datos (CDT).")), HEX25_180266(makeNimstrLit("Collective Data Trust te permite convertirte en propietario de la empresa que monetiza tus datos.")), HEX25_180266(makeNimstrLit("El Fideicomiso le permite a sus beneficiario poder aprovechar cualquier proceso de monetizaci\xC3\xB3n que ocurra en relaci\xC3\xB3n a sus datos, mientras conserva el absoluto control sobre qu\xC3\xA9 datos ser\xC3\xA1n utilizados, como ser\xC3\xA1n monetizados y qui\xC3\xA9n tendr\xC3\xA1 acceso a ellos."))])}]), HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("C\xC3\xB3mo"))}, {Field0: makeNimstrLit("type"), Field1: HEX25_180266(makeNimstrLit("text"))}, {Field0: makeNimstrLit("image"), Field1: HEX25_180266(makeNimstrLit("img/3.jpg"))}, {Field0: makeNimstrLit("contents"), Field1: HEX25_200050([HEX25_180266(makeNimstrLit("CDT busca contribuir con un ingreso b\xC3\xA1sico universal, pero de apuntar a alguna justicia social, o de reclamar derechos socio-econ\xC3\xB3micos, nosotros tomamos las cosas tal y como son, y nos enfocamos en la capacidad que tienen los datos, de generar ingresos para sus propietarios.")), HEX25_180266(makeNimstrLit("Con registrarse, ahora todos los usuarios de internet podemos convertirnos en propietarios de las empresas que monetizan nuestros datos.")), HEX25_180266(makeNimstrLit("Por \xE2\x80\x9CMonetizaci\xC3\xB3n\xE2\x80\x9D nos referimos a procesos que est\xC3\xA1n alineados a nuestra misi\xC3\xB3n, que  crear\xC3\xA1n y aumentaran el valor del colectivo de datos, a trav\xC3\xA9s del desarrollo de productos o de la monetizaci\xC3\xB3n directa en servicios aplicados a \xC3\xA1reas como el marketing. ")), HEX25_180266(makeNimstrLit("Una vez que los Beneficiarios acumulan un masa cr\xC3\xADtica de datos dentro de sus activos digitales, el fideicomiso puede optimizar los procesos de monetizaci\xC3\xB3n, de manera a generar resultados tangibles para sus beneficiarios.")), HEX25_180266(makeNimstrLit("Al mismo tiempo, esta masa de datos ser\xC3\xA1 utilizada para entrenar y mejorar servicios y productos basados en inteligencia artificial, que estar\xC3\xA1n al servicio de los beneficiarios, bajo control individual de cada uno."))])}])])}, {Field0: makeNimstrLit("documentation"), Field1: HEX25_180370([{Field0: makeNimstrLit("title"), Field1: HEX25_180266(makeNimstrLit("Documentaci\xC3\xB3n"))}, {Field0: makeNimstrLit("items"), Field1: HEX25_200050([HEX25_180370([{Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Check the concept of Public Collectively Owned Property here, on "))}, {Field0: makeNimstrLit("link"), Field1: HEX25_180266(makeNimstrLit("https://www.collectivedatatrust.com/CDT-PubliCOw-SP.pdf"))}, {Field0: makeNimstrLit("link-label"), Field1: HEX25_180266(makeNimstrLit("Short Paper"))}]), HEX25_180370([{Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Check the legal foundations of the Community here, on "))}, {Field0: makeNimstrLit("link"), Field1: HEX25_180266(makeNimstrLit("https://www.collectivedatatrust.com/CDT-DeclarationOfTrust.pdf"))}, {Field0: makeNimstrLit("link-label"), Field1: HEX25_180266(makeNimstrLit("Declaration of Trust"))}]), HEX25_180370([{Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Check how we have built a data-as-an-asset monetization unit here, on"))}, {Field0: makeNimstrLit("link"), Field1: HEX25_180266(makeNimstrLit("https://www.collectivedatatrust.com/Class-I-Personal-Beneficial-Unit-Series.pdf"))}, {Field0: makeNimstrLit("link-label"), Field1: HEX25_180266(makeNimstrLit("Constitution of Class: Personal Beneficial Unit"))}]), HEX25_180370([{Field0: makeNimstrLit("text"), Field1: HEX25_180266(makeNimstrLit("Edit discuss and fork in "))}, {Field0: makeNimstrLit("link"), Field1: HEX25_180266(makeNimstrLit("https://github.com/CollectiveDataTrust/contracts"))}, {Field0: makeNimstrLit("link-label"), Field1: HEX25_180266(makeNimstrLit(" GitHub"))}])])}])}])}])}])];
 
 function get_str_174679(n_174681, default_174682) {
 			var Tmp1;
@@ -1691,8 +1690,8 @@ function HEX5BHEX5D_184996(node_184998, name_184999) {
 	return result_185000;
 
 }
-var lang_205015 = [get_str_174679(HEX5BHEX5D_184996(cont_200551[0], makeNimstrLit("default-lang")), makeNimstrLit(""))];
-var c_205029 = [HEX5BHEX5D_184996(cont_200551[0], lang_205015[0])];
+var lang_205015 = [get_str_174679(HEX5BHEX5D_184996(cont_200540[0], makeNimstrLit("default-lang")), makeNimstrLit(""))];
+var c_205029 = [HEX5BHEX5D_184996(cont_200540[0], lang_205015[0])];
 
 function new_seq_158527(len_158531) {
 	var result_158533 = null;
@@ -3576,114 +3575,114 @@ function text_135175(s_135177) {
 
 }
 
-function menu_content_204054(menu_list_204056) {
-	var result_204057 = null;
+function menu_content_204041(menu_list_204043) {
+	var result_204044 = null;
 
-	var F={procname:"menu.menuContent",prev:framePtr,filename:"menu.nim",line:0};
+	var F={procname:"menu.menuContent",prev:framePtr,filename:"components/menu.nim",line:0};
 	framePtr = F;
 		F.line = 7;
 		F.line = 7;
-		var tmp_204072 = tree_135048(18, []);
+		var tmp_204059 = tree_135048(18, []);
 		F.line = 7;
-		tmp_204072.class = "navbar navbar-expand-lg navbar-dark fixed-top";
+		tmp_204059.class = "navbar navbar-expand-lg navbar-dark fixed-top";
 		F.line = 7;
-		tmp_204072.id = "mainNav";
+		tmp_204059.id = "mainNav";
 		F.line = 8;
-		var tmp_204078 = tree_135048(43, []);
+		var tmp_204065 = tree_135048(43, []);
 		F.line = 8;
-		tmp_204078.class = "container";
+		tmp_204065.class = "container";
 		F.line = 9;
-		var tmp_204084 = tree_135048(44, []);
+		var tmp_204071 = tree_135048(44, []);
 		F.line = 9;
-		tmp_204084.class = "navbar-brand js-scroll-trigger";
+		tmp_204071.class = "navbar-brand js-scroll-trigger";
 		F.line = 9;
-		add_133777(tmp_204084, text_135175(makeNimstrLit("HOME")));
+		add_133777(tmp_204071, text_135175(makeNimstrLit("HOME")));
 		F.line = 9;
-		add_133777(tmp_204078, tmp_204084);
+		add_133777(tmp_204065, tmp_204071);
 		F.line = 10;
-		var tmp_204090 = tree_135048(104, []);
+		var tmp_204077 = tree_135048(104, []);
 		F.line = 10;
-		tmp_204090.class = "navbar-toggler navbar-toggler-right";
+		tmp_204077.class = "navbar-toggler navbar-toggler-right";
 		F.line = 11;
-		set_attr_133549(tmp_204090, "type", "button");
+		set_attr_133549(tmp_204077, "type", "button");
 		F.line = 12;
-		set_attr_133549(tmp_204090, "data-toggle", "collapse");
+		set_attr_133549(tmp_204077, "data-toggle", "collapse");
 		F.line = 13;
-		set_attr_133549(tmp_204090, "data-target", "#navbarResponsive");
+		set_attr_133549(tmp_204077, "data-target", "#navbarResponsive");
 		F.line = 14;
-		set_attr_133549(tmp_204090, "aria-controls", "navbarResponsive");
+		set_attr_133549(tmp_204077, "aria-controls", "navbarResponsive");
 		F.line = 15;
-		set_attr_133549(tmp_204090, "aria-expanded", "false");
+		set_attr_133549(tmp_204077, "aria-expanded", "false");
 		F.line = 16;
-		set_attr_133549(tmp_204090, "aria-label", "Toggle navigation");
+		set_attr_133549(tmp_204077, "aria-label", "Toggle navigation");
 		F.line = 17;
-		add_133777(tmp_204090, text_135175(makeNimstrLit("Menu")));
+		add_133777(tmp_204077, text_135175(makeNimstrLit("Menu")));
 		F.line = 18;
-		var tmp_204096 = tree_135048(61, []);
+		var tmp_204083 = tree_135048(61, []);
 		F.line = 18;
-		tmp_204096.class = "fa fa-bars";
+		tmp_204083.class = "fa fa-bars";
 		F.line = 18;
-		add_133777(tmp_204090, tmp_204096);
+		add_133777(tmp_204077, tmp_204083);
 		F.line = 18;
-		add_133777(tmp_204078, tmp_204090);
+		add_133777(tmp_204065, tmp_204077);
 		F.line = 19;
-		var tmp_204102 = tree_135048(43, []);
+		var tmp_204089 = tree_135048(43, []);
 		F.line = 19;
-		tmp_204102.class = "collapse navbar-collapse";
+		tmp_204089.class = "collapse navbar-collapse";
 		F.line = 19;
-		tmp_204102.id = "navbarResponsive";
+		tmp_204089.id = "navbarResponsive";
 		F.line = 20;
-		var tmp_204108 = tree_135048(36, []);
+		var tmp_204095 = tree_135048(36, []);
 		F.line = 20;
-		tmp_204108.class = "navbar-nav text-uppercase ml-auto";
+		tmp_204095.class = "navbar-nav text-uppercase ml-auto";
 		L1: do {
 			F.line = 21;
-			var m_204109 = null;
-			if (!((menu_list_204056.kind == 6))) {
+			var m_204096 = null;
+			if (!((menu_list_204043.kind == 6))) {
 			F.line = 684;
 			failed_assert_impl_19881(makeNimstrLit("node.kind == JArray "));
 			}
 			
 			L2: do {
 				F.line = 685;
-				var i_204141 = null;
+				var i_204128 = null;
 				F.line = 3851;
-				var colontmp__204143 = null;
+				var colontmp__204130 = null;
 				F.line = 685;
-				colontmp__204143 = menu_list_204056.elems;
+				colontmp__204130 = menu_list_204043.elems;
 				F.line = 3853;
-				var i_204145 = 0;
+				var i_204132 = 0;
 				F.line = 3854;
-				var l_204147 = (colontmp__204143 != null ? colontmp__204143.length : 0);
+				var l_204134 = (colontmp__204130 != null ? colontmp__204130.length : 0);
 				L3: do {
 					F.line = 3855;
 						L4: while (true) {
-						if (!(i_204145 < l_204147)) break L4;
+						if (!(i_204132 < l_204134)) break L4;
 							F.line = 3856;
-							i_204141 = colontmp__204143[chckIndx(i_204145, 0, colontmp__204143.length+0-1)-0];
+							i_204128 = colontmp__204130[chckIndx(i_204132, 0, colontmp__204130.length+0-1)-0];
 							F.line = 686;
-							m_204109 = i_204141;
+							m_204096 = i_204128;
 							F.line = 22;
-							rawEcho(get_str_174679(HEX5BHEX5D_184996(m_204109, makeNimstrLit("text")), makeNimstrLit("")));
+							rawEcho(get_str_174679(HEX5BHEX5D_184996(m_204096, makeNimstrLit("text")), makeNimstrLit("")));
 							F.line = 23;
-							var tmp_204119 = tree_135048(37, []);
+							var tmp_204106 = tree_135048(37, []);
 							F.line = 23;
-							tmp_204119.class = "nav-item";
+							tmp_204106.class = "nav-item";
 							F.line = 24;
-							var tmp_204125 = tree_135048(44, []);
+							var tmp_204112 = tree_135048(44, []);
 							F.line = 24;
-							tmp_204125.class = "nav-link js-scroll-trigger";
+							tmp_204112.class = "nav-link js-scroll-trigger";
 							F.line = 24;
-							set_attr_133549(tmp_204125, "href", toJSStr(get_str_174679(HEX5BHEX5D_184996(m_204109, makeNimstrLit("href")), makeNimstrLit(""))));
+							set_attr_133549(tmp_204112, "href", toJSStr(get_str_174679(HEX5BHEX5D_184996(m_204096, makeNimstrLit("href")), makeNimstrLit(""))));
 							F.line = 24;
-							add_133777(tmp_204125, text_135175(get_str_174679(HEX5BHEX5D_184996(m_204109, makeNimstrLit("text")), makeNimstrLit(""))));
+							add_133777(tmp_204112, text_135175(get_str_174679(HEX5BHEX5D_184996(m_204096, makeNimstrLit("text")), makeNimstrLit(""))));
 							F.line = 24;
-							add_133777(tmp_204119, tmp_204125);
+							add_133777(tmp_204106, tmp_204112);
 							F.line = 24;
-							add_133777(tmp_204108, tmp_204119);
+							add_133777(tmp_204095, tmp_204106);
 							F.line = 3857;
-							i_204145 = addInt(i_204145, 1);
-							if (!(((colontmp__204143 != null ? colontmp__204143.length : 0) == l_204147))) {
+							i_204132 = addInt(i_204132, 1);
+							if (!(((colontmp__204130 != null ? colontmp__204130.length : 0) == l_204134))) {
 							F.line = 3858;
 							failed_assert_impl_19881(makeNimstrLit("len(a) == L seq modified while iterating over it"));
 							}
@@ -3693,129 +3692,95 @@ function menu_content_204054(menu_list_204056) {
 			} while(false);
 		} while(false);
 		F.line = 24;
-		add_133777(tmp_204102, tmp_204108);
+		add_133777(tmp_204089, tmp_204095);
 		F.line = 24;
-		add_133777(tmp_204078, tmp_204102);
+		add_133777(tmp_204065, tmp_204089);
 		F.line = 24;
-		add_133777(tmp_204072, tmp_204078);
-		result_204057 = tmp_204072;
+		add_133777(tmp_204059, tmp_204065);
+		result_204044 = tmp_204059;
 	framePtr = F.prev;
 
-	return result_204057;
+	return result_204044;
 
 }
 
-function tmenu_205043() {
-	var result_205045 = null;
+function tmenu_205043(m_205045) {
+	var result_205046 = null;
 
 	var F={procname:"index.tmenu",prev:framePtr,filename:"index.nim",line:0};
 	framePtr = F;
+		F.line = 18;
+		F.line = 18;
+		var tmp_205055 = tree_135048(18, []);
+		F.line = 18;
+		tmp_205055.class = "navbar navbar-expand-lg navbar-dark fixed-top";
+		F.line = 18;
+		tmp_205055.id = "mainNav";
 		F.line = 19;
+		var tmp_205061 = tree_135048(43, []);
 		F.line = 19;
-		var tmp_205057 = tree_135048(18, []);
-		F.line = 19;
-		tmp_205057.class = "navbar navbar-expand-lg navbar-dark fixed-top";
-		F.line = 19;
-		tmp_205057.id = "mainNav";
+		tmp_205061.class = "container";
 		F.line = 20;
-		var tmp_205063 = tree_135048(43, []);
+		var tmp_205067 = tree_135048(44, []);
 		F.line = 20;
-		tmp_205063.class = "container";
+		tmp_205067.class = "navbar-brand js-scroll-trigger";
+		F.line = 20;
+		set_attr_133549(tmp_205067, "href", "#page-top");
+		F.line = 20;
+		add_133777(tmp_205067, text_135175(makeNimstrLit("HOME")));
+		F.line = 20;
+		add_133777(tmp_205061, tmp_205067);
 		F.line = 21;
-		var tmp_205069 = tree_135048(44, []);
+		add_133777(tmp_205061, menu_content_204041(m_205045));
 		F.line = 21;
-		tmp_205069.class = "navbar-brand js-scroll-trigger";
-		F.line = 21;
-		set_attr_133549(tmp_205069, "href", "#page-top");
-		F.line = 21;
-		add_133777(tmp_205069, text_135175(makeNimstrLit("HOME")));
-		F.line = 21;
-		add_133777(tmp_205063, tmp_205069);
-		F.line = 32;
-		var tmp_205075 = tree_135048(104, []);
-		F.line = 32;
-		tmp_205075.class = "navbar-toggler navbar-toggler-right";
-		F.line = 33;
-		set_attr_133549(tmp_205075, "type", "button");
-		F.line = 34;
-		set_attr_133549(tmp_205075, "data-toggle", "collapse");
-		F.line = 35;
-		set_attr_133549(tmp_205075, "data-target", "#navbarResponsive");
-		F.line = 36;
-		set_attr_133549(tmp_205075, "aria-controls", "navbarResponsive");
-		F.line = 37;
-		set_attr_133549(tmp_205075, "aria-expanded", "false");
-		F.line = 38;
-		set_attr_133549(tmp_205075, "aria-label", "Toggle navigation");
-		F.line = 39;
-		add_133777(tmp_205075, text_135175(makeNimstrLit("Menu")));
-		F.line = 40;
-		var tmp_205081 = tree_135048(61, []);
-		F.line = 40;
-		tmp_205081.class = "fa fa-bars";
-		F.line = 40;
-		add_133777(tmp_205075, tmp_205081);
-		F.line = 40;
-		add_133777(tmp_205063, tmp_205075);
-		F.line = 41;
-		var tmp_205087 = tree_135048(43, []);
-		F.line = 41;
-		tmp_205087.class = "collapse navbar-collapse";
-		F.line = 41;
-		tmp_205087.id = "navbarResponsive";
-		F.line = 42;
-		add_133777(tmp_205087, menu_content_204054(menu_list_200114[0]));
-		F.line = 42;
-		add_133777(tmp_205063, tmp_205087);
-		F.line = 42;
-		add_133777(tmp_205057, tmp_205063);
-		result_205045 = tmp_205057;
+		add_133777(tmp_205055, tmp_205061);
+		result_205046 = tmp_205055;
 	framePtr = F.prev;
 
-	return result_205045;
+	return result_205046;
 
 }
 
-function logoheader_205107() {
-	var result_205109 = null;
+function logoheader_205084(logo_205086, title_205087) {
+	var result_205088 = null;
 
 	var F={procname:"index.logoheader",prev:framePtr,filename:"index.nim",line:0};
 	framePtr = F;
-		F.line = 62;
-		F.line = 62;
-		var tmp_205120 = tree_135048(43, []);
-		F.line = 63;
-		var tmp_205126 = tree_135048(27, []);
-		F.line = 63;
-		tmp_205126.class = "masthead";
-		F.line = 64;
-		var tmp_205132 = tree_135048(43, []);
-		F.line = 64;
-		tmp_205132.class = "container";
-		F.line = 65;
-		var tmp_205138 = tree_135048(43, []);
-		F.line = 65;
-		tmp_205138.class = "intro-text";
-		F.line = 66;
-		var tmp_205144 = tree_135048(75, []);
-		F.line = 66;
-		tmp_205144.class = "mobil";
-		F.line = 66;
-		set_attr_133549(tmp_205144, "src", "img/logo_header.png");
-		F.line = 66;
-		set_attr_133549(tmp_205144, "alt", "Collective Data Trust");
-		F.line = 66;
-		add_133777(tmp_205138, tmp_205144);
-		F.line = 66;
-		add_133777(tmp_205132, tmp_205138);
-		F.line = 66;
-		add_133777(tmp_205126, tmp_205132);
-		F.line = 66;
-		add_133777(tmp_205120, tmp_205126);
-		result_205109 = tmp_205120;
+		F.line = 24;
+		F.line = 24;
+		var tmp_205099 = tree_135048(43, []);
+		F.line = 25;
+		var tmp_205105 = tree_135048(27, []);
+		F.line = 25;
+		tmp_205105.class = "masthead";
+		F.line = 26;
+		var tmp_205111 = tree_135048(43, []);
+		F.line = 26;
+		tmp_205111.class = "container";
+		F.line = 27;
+		var tmp_205117 = tree_135048(43, []);
+		F.line = 27;
+		tmp_205117.class = "intro-text";
+		F.line = 28;
+		var tmp_205123 = tree_135048(75, []);
+		F.line = 28;
+		tmp_205123.class = "mobil";
+		F.line = 28;
+		set_attr_133549(tmp_205123, "src", toJSStr(logo_205086));
+		F.line = 28;
+		set_attr_133549(tmp_205123, "alt", toJSStr(title_205087));
+		F.line = 28;
+		add_133777(tmp_205117, tmp_205123);
+		F.line = 28;
+		add_133777(tmp_205111, tmp_205117);
+		F.line = 28;
+		add_133777(tmp_205105, tmp_205111);
+		F.line = 28;
+		add_133777(tmp_205099, tmp_205105);
+		result_205088 = tmp_205099;
 	framePtr = F.prev;
 
-	return result_205109;
+	return result_205088;
 
 }
 
@@ -4038,43 +4003,43 @@ function documentation_201054(c_201056) {
 
 	var F={procname:"documentation.documentation",prev:framePtr,filename:"components/documentation.nim",line:0};
 	framePtr = F;
-		F.line = 9;
-		F.line = 9;
+		F.line = 8;
+		F.line = 8;
 		var tmp_201072 = tree_135048(17, []);
-		F.line = 9;
+		F.line = 8;
 		tmp_201072.class = "bg-dark";
-		F.line = 9;
+		F.line = 8;
 		tmp_201072.id = "documentation";
-		F.line = 10;
+		F.line = 9;
 		var tmp_201078 = tree_135048(43, []);
-		F.line = 10;
+		F.line = 9;
 		tmp_201078.class = "container";
-		F.line = 11;
+		F.line = 10;
 		var tmp_201084 = tree_135048(43, []);
-		F.line = 11;
+		F.line = 10;
 		tmp_201084.class = "row";
-		F.line = 12;
+		F.line = 11;
 		var tmp_201090 = tree_135048(43, []);
-		F.line = 12;
+		F.line = 11;
 		tmp_201090.class = "col text-justify";
-		F.line = 13;
+		F.line = 12;
 		var tmp_201096 = tree_135048(22, []);
-		F.line = 13;
+		F.line = 12;
 		tmp_201096.class = "section-heading";
-		F.line = 14;
+		F.line = 13;
 		add_133777(tmp_201096, text_135175(get_str_174679(HEX5BHEX5D_184996(c_201056, makeNimstrLit("title")), makeNimstrLit(""))));
-		F.line = 14;
+		F.line = 13;
 		add_133777(tmp_201090, tmp_201096);
-		F.line = 14;
+		F.line = 13;
 		add_133777(tmp_201084, tmp_201090);
-		F.line = 14;
+		F.line = 13;
 		add_133777(tmp_201078, tmp_201084);
 		L1: do {
-			F.line = 15;
+			F.line = 14;
 			var i_201098 = null;
 			F.line = 682;
 			var colontmp__201136 = null;
-			F.line = 15;
+			F.line = 14;
 			colontmp__201136 = HEX5BHEX5D_184996(c_201056, makeNimstrLit("items"));
 			if (!((colontmp__201136.kind == 6))) {
 			F.line = 684;
@@ -4100,31 +4065,31 @@ function documentation_201054(c_201056) {
 							i_201140 = colontmp__201142[chckIndx(i_201144, 0, colontmp__201142.length+0-1)-0];
 							F.line = 686;
 							i_201098 = i_201140;
-							F.line = 16;
+							F.line = 15;
 							var tmp_201104 = tree_135048(43, []);
-							F.line = 16;
+							F.line = 15;
 							tmp_201104.class = "row";
-							F.line = 17;
+							F.line = 16;
 							var tmp_201110 = tree_135048(43, []);
-							F.line = 17;
+							F.line = 16;
 							tmp_201110.class = "col text-justify";
-							F.line = 18;
+							F.line = 17;
 							var tmp_201116 = tree_135048(31, []);
-							F.line = 19;
+							F.line = 18;
 							add_133777(tmp_201116, text_135175(get_str_174679(HEX5BHEX5D_184996(i_201098, makeNimstrLit("text")), makeNimstrLit(""))));
-							F.line = 20;
+							F.line = 19;
 							var tmp_201123 = tree_135048(44, []);
-							F.line = 20;
+							F.line = 19;
 							set_attr_133549(tmp_201123, "href", toJSStr(get_str_174679(HEX5BHEX5D_184996(i_201098, makeNimstrLit("link")), makeNimstrLit(""))));
-							F.line = 20;
+							F.line = 19;
 							add_133777(tmp_201123, text_135175(get_str_174679(HEX5BHEX5D_184996(i_201098, makeNimstrLit("link-label")), makeNimstrLit(""))));
-							F.line = 20;
+							F.line = 19;
 							add_133777(tmp_201116, tmp_201123);
-							F.line = 20;
+							F.line = 19;
 							add_133777(tmp_201110, tmp_201116);
-							F.line = 20;
+							F.line = 19;
 							add_133777(tmp_201104, tmp_201110);
-							F.line = 20;
+							F.line = 19;
 							add_133777(tmp_201078, tmp_201104);
 							F.line = 3857;
 							i_201144 = addInt(i_201144, 1);
@@ -4137,7 +4102,7 @@ function documentation_201054(c_201056) {
 				} while(false);
 			} while(false);
 		} while(false);
-		F.line = 20;
+		F.line = 19;
 		add_133777(tmp_201072, tmp_201078);
 		result_201057 = tmp_201072;
 	framePtr = F.prev;
@@ -4277,53 +4242,53 @@ function collaborate_202041(c_202043) {
 
 }
 
-function main_container_205163() {
-	var result_205165 = null;
+function main_container_205142() {
+	var result_205144 = null;
 
 	var F={procname:"index.MainContainer",prev:framePtr,filename:"index.nim",line:0};
 	framePtr = F;
-		F.line = 71;
-		c_205029[0] = HEX5BHEX5D_184996(cont_200551[0], lang_205015[0]);
-		F.line = 76;
-		F.line = 76;
-		var tmp_205173 = tree_135048(43, []);
-		F.line = 77;
-		add_133777(tmp_205173, tmenu_205043());
-		F.line = 78;
-		add_133777(tmp_205173, logoheader_205107());
-		F.line = 79;
-		add_133777(tmp_205173, parts_199186(HEX5BHEX5D_184996(c_205029[0], makeNimstrLit("sections"))));
-		F.line = 80;
-		add_133777(tmp_205173, documentation_201054(HEX5BHEX5D_184996(c_205029[0], makeNimstrLit("documentation"))));
-		F.line = 81;
-		add_133777(tmp_205173, collaborate_202041(c_205029[0]));
-		F.line = 83;
-		var tmp_205179 = tree_135048(14, []);
-		F.line = 83;
-		set_attr_133549(tmp_205179, "src", "js/agency.js");
-		F.line = 83;
-		add_133777(tmp_205173, tmp_205179);
-		result_205165 = tmp_205173;
+		F.line = 32;
+		c_205029[0] = HEX5BHEX5D_184996(cont_200540[0], lang_205015[0]);
+		F.line = 33;
+		F.line = 33;
+		var tmp_205152 = tree_135048(43, []);
+		F.line = 34;
+		add_133777(tmp_205152, tmenu_205043(HEX5BHEX5D_184996(c_205029[0], makeNimstrLit("menu"))));
+		F.line = 35;
+		add_133777(tmp_205152, logoheader_205084(get_str_174679(HEX5BHEX5D_184996(c_205029[0], makeNimstrLit("logo")), makeNimstrLit("")), get_str_174679(HEX5BHEX5D_184996(c_205029[0], makeNimstrLit("page_title")), makeNimstrLit(""))));
+		F.line = 36;
+		add_133777(tmp_205152, parts_199186(HEX5BHEX5D_184996(c_205029[0], makeNimstrLit("sections"))));
+		F.line = 37;
+		add_133777(tmp_205152, documentation_201054(HEX5BHEX5D_184996(c_205029[0], makeNimstrLit("documentation"))));
+		F.line = 38;
+		add_133777(tmp_205152, collaborate_202041(c_205029[0]));
+		F.line = 40;
+		var tmp_205160 = tree_135048(14, []);
+		F.line = 40;
+		set_attr_133549(tmp_205160, "src", "js/agency.js");
+		F.line = 40;
+		add_133777(tmp_205152, tmp_205160);
+		result_205144 = tmp_205152;
 	framePtr = F.prev;
 
-	return result_205165;
+	return result_205144;
 
 }
 
-function create_dom_205195(data_205197) {
-	var result_205198 = null;
+function create_dom_205176(data_205178) {
+	var result_205179 = null;
 
 	var F={procname:"index.createDOM",prev:framePtr,filename:"index.nim",line:0};
 	framePtr = F;
-		F.line = 88;
-		F.line = 88;
-		var tmp_205205 = tree_135048(43, []);
-		F.line = 89;
-		add_133777(tmp_205205, main_container_205163());
-		result_205198 = tmp_205205;
+		F.line = 44;
+		F.line = 44;
+		var tmp_205186 = tree_135048(43, []);
+		F.line = 45;
+		add_133777(tmp_205186, main_container_205142());
+		result_205179 = tmp_205186;
 	framePtr = F.prev;
 
-	return result_205198;
+	return result_205179;
 
 }
-set_renderer_158478(create_dom_205195, "ROOT", null);
+set_renderer_158478(create_dom_205176, "ROOT", null);

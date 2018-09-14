@@ -1,18 +1,6 @@
 
 import json
 
-# TODO put this section into the content object (?)
-var menuList* = %* [
-  {"href": "#why", "text": "Why"},
-  {"href": "#what", "text": "What"},
-  {"href": "#how", "text": "How"},
-  {"href": "#documentation", "text": "Documentation"},
-  {"href": "#collaborate", "text": "Collaborate"},
-  {"href": "#contact", "text": "contact"},
-  {"href": "https://collectivedatatrust.auth.us-east-1.amazoncognito.com/login?response_type=code&client_id=25mmtrug0ec57e9vfj0rua2551&redirect_uri=https://www.collectivedatatrust.com", "text": "Sign Up"}
-]
-
-
 var cont* = %* {
   "default-lang": "en",
   "en": {
@@ -26,6 +14,16 @@ var cont* = %* {
       }
     ],
     "page_title": "Collective Data Trust",
+    "logo": "img/logo_header.png",
+    "menu": [
+      {"href": "#Why", "text": "Why"},
+      {"href": "#What", "text": "What"},
+      {"href": "#How", "text": "How"},
+      {"href": "#documentation", "text": "Documentation"},
+      {"href": "#collaborate", "text": "Collaborate"},
+      {"href": "#contact", "text": "contact"},
+      {"href": "http://local.imu.ai:13000/#/signup", "text": "Sign Up"}
+    ],
     "sections": [
       {
         "title": "Why",
@@ -58,7 +56,7 @@ var cont* = %* {
         "type": "text",
         "images": ["img/data-money.svg", "img/info-economy.svg"],
         "contents": [
-          "CDT looks to contribute with a universal basic income, but instead of hopping for some social justice or claiming over economics rights, we take the system as it is, and we look for ways to make it happen.",
+          "CDT looks to contribute with a universal basic income, but instead of hoping for some social justice or claiming over economics rights, we take the system as it is, and we look for ways to make it happen.",
           "CDT focuses on the possibility that Data has to produce income to its beneficiaries.",
           "By signing in, all internet users can now become owners of the company that monetizes their data.",
           "By Monetization we refer to processes aligned to our mission, that will create and increase the value of the collective data, through products development, or through direct monetization and applied services like marketing and research. Once you have signed in, you are no longer just an user, you are the owner.",
