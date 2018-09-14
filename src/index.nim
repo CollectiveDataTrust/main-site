@@ -9,6 +9,7 @@ import sections
 #import navigation 
 import contents
 import components / [documentation, collaborate, contact]
+import menu
 
 var lang = cont["default-lang"].getStr()
 
@@ -38,23 +39,24 @@ proc tmenu*(): VNode =
           text "Menu"
           italic(class="fa fa-bars")
       tdiv(class="collapse navbar-collapse", id="navbarResponsive"):
-        ul(class="navbar-nav text-uppercase ml-auto"):
-          li(class="nav-item"):
-            a(class="nav-link js-scroll-trigger", href="#Why"): text "Why"
-          li(class="nav-item"):
-            a(class="nav-link js-scroll-trigger", href="#What"): text "What"
-          li(class="nav-item"):
-            a(class="nav-link js-scroll-trigger", href="#How"): text "How"
-          li(class="nav-item"):
-            a(class="nav-link js-scroll-trigger", href="#documentation"): text "Documetation"
-          li(class="nav-item"):
-            a(class="nav-link js-scroll-trigger", href="#collaborate"): text "Collaborate"
-          li(class="nav-item"):
-            a(class="nav-link js-scroll-trigger", href="#contact"): text "contact"
-          li(class="nav-item"):
-            a(class="nav-link js-scroll-trigger",
-              href="https://collectivedatatrust.auth.us-east-1.amazoncognito.com/login?response_type=code&client_id=25mmtrug0ec57e9vfj0rua2551&redirect_uri=https://www.collectivedatatrust.com"):
-                text "Sign Up"
+        menuContent(menuList)
+        # ul(class="navbar-nav text-uppercase ml-auto"):
+        #   li(class="nav-item"):
+        #     a(class="nav-link js-scroll-trigger", href="#Why"): text "Why"
+        #   li(class="nav-item"):
+        #     a(class="nav-link js-scroll-trigger", href="#What"): text "What"
+        #   li(class="nav-item"):
+        #     a(class="nav-link js-scroll-trigger", href="#How"): text "How"
+        #   li(class="nav-item"):
+        #     a(class="nav-link js-scroll-trigger", href="#documentation"): text "Documentation"
+        #   li(class="nav-item"):
+        #     a(class="nav-link js-scroll-trigger", href="#collaborate"): text "Collaborate"
+        #   li(class="nav-item"):
+        #     a(class="nav-link js-scroll-trigger", href="#contact"): text "contact"
+        #   li(class="nav-item"):
+        #     a(class="nav-link js-scroll-trigger",
+        #       href="http://local.imu.ai:13000/#/signup"):
+        #         text "Sign Up"
           
 proc logoheader*():Vnode =
     result = buildHtml(tdiv()):

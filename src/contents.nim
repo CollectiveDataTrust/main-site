@@ -1,6 +1,18 @@
 
 import json
 
+# TODO put this section into the content object (?)
+var menuList* = %* [
+  {"href": "#why", "text": "Why"},
+  {"href": "#what", "text": "What"},
+  {"href": "#how", "text": "How"},
+  {"href": "#documentation", "text": "Documentation"},
+  {"href": "#collaborate", "text": "Collaborate"},
+  {"href": "#contact", "text": "contact"},
+  {"href": "https://collectivedatatrust.auth.us-east-1.amazoncognito.com/login?response_type=code&client_id=25mmtrug0ec57e9vfj0rua2551&redirect_uri=https://www.collectivedatatrust.com", "text": "Sign Up"}
+]
+
+
 var cont* = %* {
   "default-lang": "en",
   "en": {
