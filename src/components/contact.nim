@@ -4,7 +4,6 @@ import karax / prelude
 import sugar, json
 
 proc contact*(c: JsonNode): VNode =
-  echo $c
   result = buildHtml(section(class="bg-dark", id="contact")):
     tdiv(class="container"):
       tdiv(class="row"):

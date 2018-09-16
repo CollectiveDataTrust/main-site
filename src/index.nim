@@ -1,25 +1,27 @@
 
 include karax / prelude 
 import karax / prelude
-
-#import vdom, karax, karaxdsl, kajax 
+import  karax / [errors, kdom, kajax, vstyles]
 
 import sugar, json
-import sections
-#import navigation 
-import contents
+import sections, placeholder
+
 import components / [documentation, collaborate, contact, menu]
+
+const headers = [(cstring"Content-Type", cstring"application/json")]
 
 var lang = cont["default-lang"].getStr()
 
-var c = cont[lang]
+var loadedData = cont
+var c: JsonNode
 
-proc tmenu*(m: JsonNode): VNode =
-  result = buildHtml(nav(class="navbar navbar-expand-lg navbar-dark fixed-top", id="mainNav")):
-    tdiv(class="container"):
-      a(class="navbar-brand js-scroll-trigger", href="#page-top"): text "HOME"
-      menuContent(m)
-      
+proc loadData() = 
+  ajaxGet("/data_cdt_org.json",
+          headers,
+          proc(stat:int, resp:cstring) =
+            loadedData = parseJson($resp)
+  )
+  
 proc logoheader*(logo, title: string):Vnode =
     result = buildHtml(tdiv()):
       header(class="masthead"):
@@ -27,22 +29,21 @@ proc logoheader*(logo, title: string):Vnode =
           tdiv(class="intro-text"):
             img(class="mobil", src=logo, alt=title)
 
-
-proc MainContainer(): VNode =
-  c = cont[lang]
+proc MainContainer(c: JsonNode): VNode =
   result = buildHtml(tdiv()):
-    tmenu(c["menu"])
+    menuContent(c["menu"])
     logoheader(c["logo"].getStr(), c["page_title"].getStr())
     parts(c["sections"])
     documentation(c["documentation"])
     collaborate(c)
-    #contact(c)
-    script( src="js/agency.js")
-
+    contact(c)
+    #script( src="js/agency.js")
 
 proc createDOM(data: RouterData): VNode =
+  if c.isNil:
+    loadData()
+  c = loadedData[lang]
   result = buildHtml(tdiv()):
-    MainContainer()
-
+    MainContainer(c)
 
 setRenderer createDOM
