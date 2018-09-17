@@ -100,84 +100,111 @@
               "text": "We are fully loaded with work, and we welcome all proactive members of the community who would like to participate and get involved in the development of CDT.",
               "links": []
             }
-          } ]
+          }]
       }
     },
-    "es": {
-      "lang-title": "Idioma",
-      "langs": [
+    "contacts": {
+      "title": "Contact",
+      "items": [
         {
-          "en": "Ingles"
-        },
-        {
-          "es": "Español"
-        }
-      ],
-      "page_title": "Collective Data Trust",
-      "label": "Español",
-      "sections": [
-        {
-          "title": "Por qué",
-          "type": "text",
-          "image": "img/1.jpg",
-          "contents": [
-            "Imagínate que alguien pudiera pagarte tan solo por existir y compartir información respecto a tu existencia.",
-            "Tus datos son tus activos, porque tienen un valor, que se usa en transacciones, que mueven la economía de la información.",
-            "Nosotros somos la razón de existir para el internet y las máquinas, deberíamos poder opinar sobre la evolución de ambos.",
-            "No se trata del dinero que tus datos producen sin darte ningún beneficio. Se trata de las decisiones que te afectan como usuario.",
-            "Nosotros no queremos renunciar a nuestro estilo de vida y nuestras necesidad, solo para proteger nuestros datos. Lo que queremos es control total sobre nuestra propiedad.",
-            "Este no es un asunto de políticas y regulaciones, este es un asunto de CONTROL y PROPIEDAD"
+          "name": "THE TRUST",
+          "email": "info@collectivedatatrust.com",
+          "address_lines": [
+            "Collective Data Trust",
+            "1000 N. West St., Suite. 1501",
+            "P.O. Box 8702",
+            "Wilmington, DE 19899",
+            "+1 (302) 261 5727"
           ]
-        },
-        {
-          "title": "Qué",
-          "type": "text",
-          "image": "img/2.jpg",
-          "contents": [
-            "Esto es Collective Data Trust, un fideicomiso colectivo de datos.",
-            "Somos una comunidad de usuarios de internet, donde entendemos la importancia del desarrollo seguro de la inteligencia y artificial, y la urgencia de mejores prácticas en cuanto a manejo de datos y monetización, y por eso hemos creado el Fideicomiso Colectivo de Datos (CDT).",
-            "Collective Data Trust te permite convertirte en propietario de la empresa que monetiza tus datos.",
-            "El Fideicomiso le permite a sus beneficiario poder aprovechar cualquier proceso de monetización que ocurra en relación a sus datos, mientras conserva el absoluto control sobre qué datos serán utilizados, como serán monetizados y quién tendrá acceso a ellos."
-          ]
-        },
-        {
-          "title": "Cómo",
-          "type": "text",
-          "image": "img/3.jpg",
-          "contents": [
-            "CDT busca contribuir con un ingreso básico universal, pero de apuntar a alguna justicia social, o de reclamar derechos socio-económicos, nosotros tomamos las cosas tal y como son, y nos enfocamos en la capacidad que tienen los datos, de generar ingresos para sus propietarios.",
-            "Con registrarse, ahora todos los usuarios de internet podemos convertirnos en propietarios de las empresas que monetizan nuestros datos.",
-            "Por “Monetización” nos referimos a procesos que están alineados a nuestra misión, que  crearán y aumentaran el valor del colectivo de datos, a través del desarrollo de productos o de la monetización directa en servicios aplicados a áreas como el marketing. ",
-            "Una vez que los Beneficiarios acumulan un masa crítica de datos dentro de sus activos digitales, el fideicomiso puede optimizar los procesos de monetización, de manera a generar resultados tangibles para sus beneficiarios.",
-            "Al mismo tiempo, esta masa de datos será utilizada para entrenar y mejorar servicios y productos basados en inteligencia artificial, que estarán al servicio de los beneficiarios, bajo control individual de cada uno."
+        },{
+          "name": "THE TRUSTEE",
+          "email": "info@synarchys.com",
+          "address_lines": [
+            "Synarchys Corp" ,
+            "704 N King Street",
+            "Suite 500",
+            "Wilmington, DE 19801",
+            "+1 (302) 956 9625"
           ]
         }
-      ],
-      "documentation": {
-        "title": "Documentación",
-        "items": [
-          {
-            "text": "Check the concept of Public Collectively Owned Property here, on ",
-            "link": "https://www.collectivedatatrust.com/CDT-PubliCOw-SP.pdf",
-            "link-label": "Short Paper"
-          },
-          {
-            "text": "Check the legal foundations of the Community here, on ",
-            "link": "https://www.collectivedatatrust.com/CDT-DeclarationOfTrust.pdf",
-            "link-label": "Declaration of Trust"
-          },
-          {
-            "text": "Check how we have built a data-as-an-asset monetization unit here, on",
-            "link": "https://www.collectivedatatrust.com/Class-I-Personal-Beneficial-Unit-Series.pdf",
-            "link-label": "Constitution of Class: Personal Beneficial Unit"
-          },
-          {
-            "text": "Edit discuss and fork in ",
-            "link": "https://github.com/CollectiveDataTrust/contracts",
-            "link-label": " GitHub"
-          }
+      ]
+    }
+  },
+  "es": {
+    "lang-title": "Idioma",
+    "langs": [
+      {
+        "en": "Ingles"
+      },
+      {
+        "es": "Español"
+      }
+    ],
+    "page_title": "Collective Data Trust",
+    "label": "Español",
+    "sections": [
+      {
+        "title": "Por qué",
+        "type": "text",
+        "image": "img/1.jpg",
+        "contents": [
+          "Imagínate que alguien pudiera pagarte tan solo por existir y compartir información respecto a tu existencia.",
+          "Tus datos son tus activos, porque tienen un valor, que se usa en transacciones, que mueven la economía de la información.",
+          "Nosotros somos la razón de existir para el internet y las máquinas, deberíamos poder opinar sobre la evolución de ambos.",
+          "No se trata del dinero que tus datos producen sin darte ningún beneficio. Se trata de las decisiones que te afectan como usuario.",
+          "Nosotros no queremos renunciar a nuestro estilo de vida y nuestras necesidad, solo para proteger nuestros datos. Lo que queremos es control total sobre nuestra propiedad.",
+          "Este no es un asunto de políticas y regulaciones, este es un asunto de CONTROL y PROPIEDAD"
+        ]
+      },
+      {
+        "title": "Qué",
+        "type": "text",
+        "image": "img/2.jpg",
+        "contents": [
+          "Esto es Collective Data Trust, un fideicomiso colectivo de datos.",
+          "Somos una comunidad de usuarios de internet, donde entendemos la importancia del desarrollo seguro de la inteligencia y artificial, y la urgencia de mejores prácticas en cuanto a manejo de datos y monetización, y por eso hemos creado el Fideicomiso Colectivo de Datos (CDT).",
+          "Collective Data Trust te permite convertirte en propietario de la empresa que monetiza tus datos.",
+          "El Fideicomiso le permite a sus beneficiario poder aprovechar cualquier proceso de monetización que ocurra en relación a sus datos, mientras conserva el absoluto control sobre qué datos serán utilizados, como serán monetizados y quién tendrá acceso a ellos."
+        ]
+      },
+      {
+        "title": "Cómo",
+        "type": "text",
+        "image": "img/3.jpg",
+        "contents": [
+          "CDT busca contribuir con un ingreso básico universal, pero de apuntar a alguna justicia social, o de reclamar derechos socio-económicos, nosotros tomamos las cosas tal y como son, y nos enfocamos en la capacidad que tienen los datos, de generar ingresos para sus propietarios.",
+          "Con registrarse, ahora todos los usuarios de internet podemos convertirnos en propietarios de las empresas que monetizan nuestros datos.",
+          "Por “Monetización” nos referimos a procesos que están alineados a nuestra misión, que  crearán y aumentaran el valor del colectivo de datos, a través del desarrollo de productos o de la monetización directa en servicios aplicados a áreas como el marketing. ",
+          "Una vez que los Beneficiarios acumulan un masa crítica de datos dentro de sus activos digitales, el fideicomiso puede optimizar los procesos de monetización, de manera a generar resultados tangibles para sus beneficiarios.",
+          "Al mismo tiempo, esta masa de datos será utilizada para entrenar y mejorar servicios y productos basados en inteligencia artificial, que estarán al servicio de los beneficiarios, bajo control individual de cada uno."
         ]
       }
+    ],
+    "documentation": {
+      "title": "Documentación",
+      "items": [
+        {
+          "text": "Check the concept of Public Collectively Owned Property here, on ",
+          "link": "https://www.collectivedatatrust.com/CDT-PubliCOw-SP.pdf",
+          "link-label": "Short Paper"
+        },
+        {
+          "text": "Check the legal foundations of the Community here, on ",
+          "link": "https://www.collectivedatatrust.com/CDT-DeclarationOfTrust.pdf",
+          "link-label": "Declaration of Trust"
+        },
+        {
+          "text": "Check how we have built a data-as-an-asset monetization unit here, on",
+          "link": "https://www.collectivedatatrust.com/Class-I-Personal-Beneficial-Unit-Series.pdf",
+          "link-label": "Constitution of Class: Personal Beneficial Unit"
+        },
+        {
+          "text": "Edit discuss and fork in ",
+          "link": "https://github.com/CollectiveDataTrust/contracts",
+          "link-label": " GitHub"
+        }
+      ]
     }
   }
 }
+

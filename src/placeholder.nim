@@ -35,6 +35,15 @@ var cont* = %* {
           "link-label": ""
         }]
       },
+    "contacts": {
+      "items": [
+        {
+          "name": "",
+          "email": "",
+          "address_lines": [
+          ]
+        }]
+      },
     "collaborate":{
       "title": "Colaborate",
       "items":[

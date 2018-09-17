@@ -36,7 +36,7 @@ proc MainContainer(c: JsonNode): VNode =
     parts(c["sections"])
     documentation(c["documentation"])
     collaborate(c)
-    contact(c)
+    contact(c["contacts"])
     script( src="js/agency.js")
 
 proc createDOM(data: RouterData): VNode =
