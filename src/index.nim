@@ -1,91 +1,49 @@
 
 include karax / prelude 
 import karax / prelude
-
-#import vdom, karax, karaxdsl, kajax 
+import  karax / [errors, kdom, kajax, vstyles]
 
 import sugar, json
-import sections
-#import navigation 
-import contents
-import components / [documentation, collaborate, contact]
+import sections, placeholder
+
+import components / [documentation, collaborate, contact, menu]
+
+const headers = [(cstring"Content-Type", cstring"application/json")]
 
 var lang = cont["default-lang"].getStr()
 
-var c = cont[lang]
+var loadedData = cont
+var c: JsonNode
 
-proc tmenu*(): VNode =
-  result = buildHtml(nav(class="navbar navbar-expand-lg navbar-dark fixed-top", id="mainNav")):
-    tdiv(class="container"):
-      a(class="navbar-brand js-scroll-trigger", href="#page-top"): text "HOME"
-      # tdiv(class="dropdown"):
-      #   button(class="btn btn-primary dropdown-toggle",
-      #          `type`="button",
-      #          id="dropdownMenuButton",
-      #          `data-toggle`="dropdown",
-      #          `aria-haspopup`="true",
-      #          `aria-expanded`="false"): text c["lang-title"].getStr()
-      #   tdiv(class="dropdown-menu", `aria-labelledby`="dropdownMenuButton"):
-      #     a(class="dropdown-item", onClick = proc()= lang="en"): text "English"
-      #     a(class="dropdown-item", onClick = proc()= lang="es"): text "Español"
-      button(class="navbar-toggler navbar-toggler-right",
-             `type`="button",
-             `data-toggle`="collapse",
-             `data-target`="#navbarResponsive",
-             `aria-controls`="navbarResponsive",
-             `aria-expanded`="false",
-             `aria-label`="Toggle navigation"):
-          text "Menu"
-          italic(class="fa fa-bars")
-      tdiv(class="collapse navbar-collapse", id="navbarResponsive"):
-        ul(class="navbar-nav text-uppercase ml-auto"):
-          li(class="nav-item"):
-            a(class="nav-link js-scroll-trigger", href="#Why"): text "Why"
-          li(class="nav-item"):
-            a(class="nav-link js-scroll-trigger", href="#What"): text "What"
-          li(class="nav-item"):
-            a(class="nav-link js-scroll-trigger", href="#How"): text "How"
-          li(class="nav-item"):
-            a(class="nav-link js-scroll-trigger", href="#documentation"): text "Documetation"
-          li(class="nav-item"):
-            a(class="nav-link js-scroll-trigger", href="#collaborate"): text "Collaborate"
-          li(class="nav-item"):
-            a(class="nav-link js-scroll-trigger", href="#contact"): text "contact"
-          # li(class="nav-item"):
-          #   a(class="nav-link js-scroll-trigger",
-          #     href="https://collectivedatatrust.auth.us-east-1.amazoncognito.com/login?response_type=code&client_id=25mmtrug0ec57e9vfj0rua2551&redirect_uri=https://www.collectivedatatrust.com"):
-          #       text "Sign Up"
-          
-proc logoheader*():Vnode =
+proc loadData() = 
+  ajaxGet("/data_cdt_org.json",
+          headers,
+          proc(stat:int, resp:cstring) =
+            loadedData = parseJson($resp)
+  )
+  
+proc logoheader*(logo, title: string):Vnode =
     result = buildHtml(tdiv()):
       header(class="masthead"):
         tdiv(class="container"):
           tdiv(class="intro-text"):
-            img(class="mobil", src="img/logo_header.png", alt="Collective Data Trust")
+            img(class="mobil", src=logo, alt=title)
 
-
-
-proc MainContainer(): VNode =
-  c = cont[lang]
-  #echo "------\n" & $c["sections"] & "\n-------\n"
-  #var langTitle = c["lang-title"].getStr()
-  #var langs = c["langs"]
-
+proc MainContainer(c: JsonNode): VNode =
   result = buildHtml(tdiv()):
-    tmenu()
-    logoheader()
+    menuContent(c["menu"])
+    logoheader(c["logo"].getStr(), c["page_title"].getStr())
     parts(c["sections"])
     documentation(c["documentation"])
     collaborate(c)
-    #contact(c)
+    contact(c["contacts"])
     script( src="js/agency.js")
 
-    
-
 proc createDOM(data: RouterData): VNode =
+  if c.isNil:
+    loadData()
+  c = loadedData[lang]
   result = buildHtml(tdiv()):
-    MainContainer()
-
-#loadContents()
+    MainContainer(c)
 
 setRenderer createDOM

@@ -2,7 +2,6 @@
 include karax / prelude 
 import karax / prelude
 
-
 import json
 
 proc documentation*(c:JsonNode): VNode =
