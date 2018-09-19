@@ -15,9 +15,13 @@ var cont* = %* {
     ],
     "page_title": "",
     "logo": "",
-    "menu": [
-      {"href": "", "text": ""},
-    ],
+    "menu":
+      {
+        "style": "",
+        "items": [
+          {"href": "", "text": ""},
+        ]
+      },
     "sections": [
       {
         "title": "",
