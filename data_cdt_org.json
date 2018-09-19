@@ -12,14 +12,17 @@
     ],
     "page_title": "Collective Data Trust",
     "logo": "img/logo_header.png",
-    "menu": [
-      {"href": "#Why", "text": "Why"},
-      {"href": "#What", "text": "What"},
-      {"href": "#How", "text": "How"},
-      {"href": "#documentation", "text": "Documentation"},
-      {"href": "#collaborate", "text": "Collaborate"},
-      {"href": "#contact", "text": "contact"}
-    ],
+    "menu": {
+      "style":"navbar navbar-expand-lg navbar-dark fixed-top",
+      "items": [
+        {"href": "#Why", "text": "Why"},
+        {"href": "#What", "text": "What"},
+        {"href": "#How", "text": "How"},
+        {"href": "#documentation", "text": "Documentation"},
+        {"href": "#collaborate", "text": "Collaborate"},
+        {"href": "#contact", "text": "contact"}
+      ]
+    },
     "sections": [
       {
         "title": "Why",
