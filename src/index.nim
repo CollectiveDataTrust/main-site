@@ -16,7 +16,7 @@ var loadedData = cont
 var c: JsonNode
 
 proc loadData() =  
-  ajaxGet("/data_cdt_org.json",
+  ajaxGet("/contents.json",
           headers,
           proc(stat:int, resp:cstring) =
             loadedData = parseJson($resp)
