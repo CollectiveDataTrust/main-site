@@ -30,9 +30,54 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs166" />
+     id="defs166">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter906">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix902" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic"
+         id="feColorMatrix904" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix908" />
+      <feColorMatrix
+         id="feColorMatrix910"
+         type="hueRotate"
+         values="180"
+         result="color1"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix912"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix914" />
+      <feColorMatrix
+         id="feColorMatrix916"
+         type="hueRotate"
+         values="180"
+         result="color1"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix918"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2" />
+    </filter>
+  </defs>
   <sodipodi:namedview
-     pagecolor="#000000"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -41,14 +86,14 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="997"
+     inkscape:window-height="1056"
      id="namedview164"
      showgrid="false"
-     inkscape:zoom="0.9074537"
-     inkscape:cx="225.93395"
-     inkscape:cy="250.40652"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:zoom="0.40171597"
+     inkscape:cx="423.5045"
+     inkscape:cy="272.6121"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg162" />
   <clipPath
@@ -60,7 +105,8 @@
   </clipPath>
   <g
      id="g1140"
-     transform="matrix(1.678509,0,0,1.678509,-329.07142,-191.59842)">
+     transform="matrix(1.5868456,0,0,1.5868456,-307.69841,-162.6193)"
+     style="filter:url(#filter906)">
     <path
        d="m 621.1625,326.46274 h 54.10468 v 65.25491 H 621.1625 Z"
        id="path7"

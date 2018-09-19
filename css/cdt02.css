@@ -15,8 +15,8 @@
         font-size: 130%
         
     }
-    background-color: #212529;
-    background: #212529
+    background-color: white;
+    background: white
 }
 
 @media only screen and (max-width: 767px) {
@@ -30,17 +30,17 @@
         font-family: 'sans-serif';
         font-size: 100%
     }
-    background-color: #212529;
-    background: #212529
+    background-color: white;
+    background: white
 }
 
 body {
     overflow-x: hidden;
     font-family: 'sans-serif';
     font-size: 130%;
-    color: #fff;
-    background-color: #212529;
-    background: #212529
+    color: black;
+    background-color: white;
+    background: white;
 }
 
 p {
@@ -283,7 +283,7 @@ section#contact {
 }
 
 section#contact .section-heading {
-    color: #fff
+    color: black
 }
 
 section#contact .form-group {

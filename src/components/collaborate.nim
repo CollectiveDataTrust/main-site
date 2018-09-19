@@ -5,7 +5,7 @@ import sugar, json
 
 proc collaborate*(c: JsonNode): VNode =
 #  echo $c
-  result = buildHtml(section(class="bg-dark", id="collaborate")):
+  result = buildHtml(section(class="bg-white", id="collaborate")):
     tdiv(class="container"):
       tdiv(class="row"):
         tdiv(class="col"):

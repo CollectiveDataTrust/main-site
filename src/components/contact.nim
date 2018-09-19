@@ -4,14 +4,14 @@ import karax / prelude
 import sugar, json
 
 proc contact*(contacts: JsonNode): VNode =
-  result = buildHtml(section(class="bg-dark", id="contact")):
+  result = buildHtml(section(class="bg-white", id="contact")):
     tdiv(class="container"):
       tdiv(class="row"):
         tdiv(class="col text-center"):
           h2(class="section-heading text-center"): text "Contact"
         
       h3(class="section-subheading text-muted")
-      tdiv(class="text-justify text-light"):
+      tdiv(class="text-justify text-black"):
         tdiv(class="container"):
           tdiv(class="row"):
             for c in contacts["items"]:

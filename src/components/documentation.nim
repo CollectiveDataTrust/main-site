@@ -5,7 +5,7 @@ import karax / prelude
 import json
 
 proc documentation*(c:JsonNode): VNode =
-  result = buildHtml(section(class="bg-dark", id="documentation")):
+  result = buildHtml(section(class="bg-white", id="documentation")):
     tdiv(class="container"):
       tdiv(class="row"):
         tdiv(class="col text-justify"):

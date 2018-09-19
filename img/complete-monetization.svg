@@ -68,9 +68,23 @@
         </feComponentTransfer>
       </filter>
     </defs>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Invert"
+       id="filter905">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix901" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="color2"
+         id="feColorMatrix903" />
+    </filter>
   </defs>
   <sodipodi:namedview
-     pagecolor="#000000"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -79,14 +93,14 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="997"
+     inkscape:window-height="1056"
      id="namedview169"
      showgrid="false"
-     inkscape:zoom="0.9074537"
-     inkscape:cx="652.25147"
-     inkscape:cy="136.8692"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:zoom="0.32560362"
+     inkscape:cx="476.7209"
+     inkscape:cy="257.94207"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg167" />
   <clipPath
@@ -98,7 +112,8 @@
   </clipPath>
   <g
      id="g1141"
-     transform="matrix(1.9654569,0,0,1.9654569,-411.52067,-248.61316)">
+     transform="matrix(1.9654569,0,0,1.9654569,-411.52067,-248.61316)"
+     style="filter:url(#filter905)">
     <path
        d="M 406.89853,236.81859 H 531.5708 v 57.89854 H 406.89853 Z"
        id="path7"

@@ -14,7 +14,7 @@ type
 proc part*(s: JsonNode): VNode =
   #echo $s
   
-  result = buildHtml(section(class="bg-dark", id=s["title"].getStr())):
+  result = buildHtml(section(class="bg-white", id=s["title"].getStr())):
     tdiv(class="container"):
       tdiv(class="row"):
         tdiv(class="col-sm-6"):
