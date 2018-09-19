@@ -15,7 +15,7 @@ var lang = cont["default-lang"].getStr()
 var loadedData = cont
 var c: JsonNode
 
-proc loadData() = 
+proc loadData() =  
   ajaxGet("/data_cdt_org.json",
           headers,
           proc(stat:int, resp:cstring) =
@@ -37,7 +37,6 @@ proc MainContainer(c: JsonNode): VNode =
     documentation(c["documentation"])
     collaborate(c)
     contact(c["contacts"])
-    script( src="js/agency.js")
 
 proc createDOM(data: RouterData): VNode =
   if c.isNil:
@@ -45,5 +44,6 @@ proc createDOM(data: RouterData): VNode =
   c = loadedData[lang]
   result = buildHtml(tdiv()):
     MainContainer(c)
+    script( src="js/agency.js")
 
 setRenderer createDOM
