@@ -15,7 +15,8 @@ var lang = cont["default-lang"].getStr()
 var loadedData = cont
 var c: JsonNode
 
-proc loadData() =  
+proc loadData() =
+  echo "loading data"
   ajaxGet("/contents.json",
           headers,
           proc(stat:int, resp:cstring) =
